@@ -24,5 +24,8 @@
   *max
 
 # Input Group
+# Floating Labels
+  *is-invalid
+  *form-floating
 
 
