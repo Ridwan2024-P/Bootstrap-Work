@@ -21,3 +21,11 @@
     *list-inline-item
     *text-truncate
 
+# Images
+    *img-fluid
+    *img-thumbnail
+    *rounded
+    *float-start
+    *float-end
+    *float-center[ mx-auto d-block] 
+
