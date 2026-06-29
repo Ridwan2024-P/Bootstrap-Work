@@ -50,4 +50,9 @@
     *align-top
     *align-bottom[must need hight]
 
+# Figures
+
+    *figure
+    *figure-caption [text-start,text-center,text-end]
+
 
