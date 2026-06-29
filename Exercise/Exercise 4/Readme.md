@@ -31,3 +31,6 @@
 # Horizontal Forms
   *offset-md-2
 
+# Auto Sizing
+  *col-auto
+
