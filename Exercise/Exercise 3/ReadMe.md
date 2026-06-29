@@ -29,3 +29,22 @@
     *float-end
     *float-center[ mx-auto d-block] 
 
+# Table
+    *table
+    *table-primary
+    *table-secondary
+    *table-success
+    *table-danger
+    *table-warning
+    *table-info
+    *table-light
+    *table-dark
+    *table-skriped
+    *table-skriped-columns
+    *table-bordered
+    *table-borderes-primary - table-bordered-dark
+    *table-borderless
+    *table-group-divider
+    *table-hover
+
+
