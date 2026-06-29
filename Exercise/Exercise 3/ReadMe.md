@@ -55,4 +55,6 @@
     *figure
     *figure-caption [text-start,text-center,text-end]
 
+    ![alt text](image.png)
+
 
