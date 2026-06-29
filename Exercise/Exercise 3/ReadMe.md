@@ -16,3 +16,8 @@
 
 # Abbreviation and Blockquotes
 
+# Lists
+    *text-unstyled
+    *list-inline-item
+    *text-truncate
+
