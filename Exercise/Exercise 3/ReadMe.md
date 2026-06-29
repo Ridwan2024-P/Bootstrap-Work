@@ -46,5 +46,8 @@
     *table-borderless
     *table-group-divider
     *table-hover
+    *align-middle (defult)
+    *align-top
+    *align-bottom[must need hight]
 
 
