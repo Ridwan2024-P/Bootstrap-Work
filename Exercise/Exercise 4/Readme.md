@@ -28,4 +28,6 @@
   *is-invalid
   *form-floating
 # Form-Layout
+# Horizontal Forms
+  *offset-md-2
 
