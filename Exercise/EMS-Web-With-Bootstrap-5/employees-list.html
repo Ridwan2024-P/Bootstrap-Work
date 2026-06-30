@@ -66,7 +66,7 @@
             <div class="col-md-2">
                 <div class="list-group shadow-sm small mb-3 ">
                     <div class="list-group-item active">Employee Data</div>
-                    <a href="#" class="list-group-item list-group-item-action" data-bs-target="model" data-bs-target="#add_employee">
+                    <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#add_employee">
                         Add Employee
                     </a>
                      <a href="#" class="list-group-item list-group-item-action" d>
@@ -209,6 +209,21 @@
             </div>
         </div>
      </div>
+
+     <!-- Employee add -->
+
+<div class="modal fade" id="add_employee" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" style="backdrop-filter: blur(5px);">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-bg-dark">
+                <h5 class="modal-title">Add Employee Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
     
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
