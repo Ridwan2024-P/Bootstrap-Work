@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Breadcrumb</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <!-- Breadcrumb 1 -->
+        <div class="col-md-8 mb-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Home
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Breadcrumb 2 -->
+        <div class="col-md-8">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        Home
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Library
+                    </li>
+                </ol>
+            </nav>
+        </div>
+         <div class="col-md-8">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-light border px-4 py-2 rounded">
+                    <li class="breadcrumb-item">
+                        Home
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Library
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Data
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-md-8">
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                <ol class="breadcrumb bg-light border px-4 py-2 rounded">
+                    <li class="breadcrumb-item">
+                        Home
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Library
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        Data
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
