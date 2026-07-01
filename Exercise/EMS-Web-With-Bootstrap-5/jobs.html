@@ -95,7 +95,7 @@
                             <th>1</th>
                             <th>Web Designer</th>
                             <th><div class="d-grid"> <a href="#" class="btn btn-primary">Details</a></th></div>     
-                            <th><div class="d-grid"> <a href="#" class="btn btn-warning">Edit</a></th></div>                           
+                            <th><div class="d-grid"> <a href="#" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#job_edit">Edit</a></th></div>                           
                             <th><div class="d-grid"> <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#job_delete">Delete</a></th></th>
 
                         </tr>
@@ -103,7 +103,7 @@
                             <th>1</th>
                             <th>Web Designer</th>
                             <th><div class="d-grid"> <a href="#" class="btn btn-primary">Details</a></th></div>     
-                            <th><div class="d-grid"> <a href="#" class="btn btn-warning">Edit</a></th></div>                           
+                            <th><div class="d-grid"> <a href="#" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#job_edit">Edit</a></th></div>                           
                             <th><div class="d-grid"> <a href="#" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#job_delete">Delete</a></th></th>
 
                         </tr>
@@ -111,7 +111,7 @@
                             <th>1</th>
                             <th>Web Designer</th>
                             <th><div class="d-grid"> <a href="#" class="btn btn-primary" >Details</a></th></div>     
-                            <th><div class="d-grid"> <a href="#" class="btn btn-warning">Edit</a></th></div>                           
+                            <th><div class="d-grid"> <a href="#" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#job_edit">Edit</a></th></div>                           
                             <th><div class="d-grid"> <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#job_delete">Delete</a></th></th>
 
                         </tr>
@@ -121,6 +121,56 @@
             </div>
         </div>
      </div>
+
+
+     
+<!-- Edit Modal -->
+<div class="modal fade" id="job_edit" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" style="backdrop-filter: blur(5px);">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-bg-dark">
+                <h5 class="modal-title">Job Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="container">
+                        <div class="row gx-3">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="date" class="form-control form-control-sm" required value="2009-12-09">
+                                </div>
+                            </div>
+    
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <select class="form-select form-select-sm" aria-label="Job Assigned">
+                                        <option>Select job list</option>
+                                        <option value="Graphic Designer" selected>Graphic Designer</option>
+                                        <option value="Web Designer">Web Designer</option>
+                                        <option value="Web Developer">Web Developer</option>
+                                        <option value="Digital Marketer">Digital Marketer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-sm btn-success">Update Job</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-sm btn-warning" data-bs-dismiss="modal" aria-label="Close">Discard</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Edit Modal -->
 
 
 
