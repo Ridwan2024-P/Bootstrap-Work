@@ -1,0 +1,15 @@
+ .brand-gradient{
+    background: #00ccff; 
+    background: -webkit-linear-gradient(to right, #00ccff, #00a347); 
+    background: linear-gradient(to right, #00ccff, #00a347);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.banner-holder{
+    background-image: url(../Blog-App-with-Bootstrap-5/img/Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
