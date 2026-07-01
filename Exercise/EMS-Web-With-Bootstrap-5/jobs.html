@@ -60,13 +60,13 @@
         </div>
      </nav>
 
-    <!-- Employess data -->
+    <!-- Jobs data -->
      <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-2">
                 <div class="list-group shadow-sm small mb-3 ">
                     <div class="list-group-item active">Jobs data</div>
-                    <a href="#" class="list-group-item list-group-item-action" data-bs-target="model" data-bs-target="#add_job">
+                    <a href="#" class="list-group-item list-group-item-action"  data-bs-toggle="modal" data-bs-target="#add_job">
                         Add Job
                     </a>
                      <a href="#" class="list-group-item list-group-item-action" data-bs-target="model" data-bs-target="#view_jobs">
@@ -121,6 +121,53 @@
             </div>
         </div>
      </div>
+
+
+     <!-- Add job Modal -->
+<div class="modal fade" id="add_job" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" style="backdrop-filter: blur(5px);">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-bg-dark">
+                <h5 class="modal-title">Add Job Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="container">
+                        <div class="row gx-3">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="date" class="form-control form-control-sm" required>
+                                </div>
+                            </div>                       
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <select class="form-select form-select-sm" aria-label="Job Assigned">
+                                        <option selected>Select job for employee</option>
+                                        <option value="Graphic Designer">Graphic Designer</option>
+                                        <option value="Web Designer">Web Designer</option>
+                                        <option value="Web Developer">Web Developer</option>
+                                        <option value="Digital Marketer">Digital Marketer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-sm btn-success">Add Employee</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-sm btn-warning" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 
      <!-- Employee Details -->
