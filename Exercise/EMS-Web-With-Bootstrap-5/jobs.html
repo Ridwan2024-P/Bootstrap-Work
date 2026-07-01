@@ -66,10 +66,10 @@
             <div class="col-md-2">
                 <div class="list-group shadow-sm small mb-3 ">
                     <div class="list-group-item active">Jobs data</div>
-                    <a href="#" class="list-group-item list-group-item-action" data-bs-target="model" data-bs-target="#add_employee">
+                    <a href="#" class="list-group-item list-group-item-action" data-bs-target="model" data-bs-target="#add_job">
                         Add Job
                     </a>
-                     <a href="#" class="list-group-item list-group-item-action" d>
+                     <a href="#" class="list-group-item list-group-item-action" data-bs-target="model" data-bs-target="#view_jobs">
                         View Jobs
                     </a>                  
                 </div>
@@ -94,7 +94,7 @@
                         <tr>
                             <th>1</th>
                             <th>Web Designer</th>
-                            <th><div class="d-grid"> <a href="#" class="btn btn-primary">Details</a></th></div>     
+                            <th><div class="d-grid"> <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#job_details">Details</a></th></div>     
                             <th><div class="d-grid"> <a href="#" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#job_edit">Edit</a></th></div>                           
                             <th><div class="d-grid"> <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#job_delete">Delete</a></th></th>
 
@@ -102,7 +102,7 @@
                          <tr>
                             <th>1</th>
                             <th>Web Designer</th>
-                            <th><div class="d-grid"> <a href="#" class="btn btn-primary">Details</a></th></div>     
+                            <th><div class="d-grid"> <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#job_details">Details</a></th></div>     
                             <th><div class="d-grid"> <a href="#" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#job_edit">Edit</a></th></div>                           
                             <th><div class="d-grid"> <a href="#" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#job_delete">Delete</a></th></th>
 
@@ -110,7 +110,7 @@
                          <tr>
                             <th>1</th>
                             <th>Web Designer</th>
-                            <th><div class="d-grid"> <a href="#" class="btn btn-primary" >Details</a></th></div>     
+                            <th><div class="d-grid"> <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#job_details">Details</a></th></div>     
                             <th><div class="d-grid"> <a href="#" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#job_edit">Edit</a></th></div>                           
                             <th><div class="d-grid"> <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#job_delete">Delete</a></th></th>
 
@@ -121,6 +121,36 @@
             </div>
         </div>
      </div>
+
+
+     <!-- Employee Details -->
+<div class="modal fade" id="job_details" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" style="backdrop-filter: blur(5px);">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-bg-dark">
+                <h5 class="modal-title">Employee Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <table class="table table-bordered small mb-0">
+                    <tr>
+                        <th class="w-50">ID</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Job Name</th>
+                        <td>Graphic Designer</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#job_edit">Edit Details</a>
+                <a href="#" class="btn btn-sm btn-primary" data-bs-dismiss="modal" aria-label="Close">Close</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Employee Details -->
 
 
      
