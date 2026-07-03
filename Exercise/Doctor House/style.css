@@ -53,3 +53,10 @@
     right: -18px;
      background: rgba(247, 165, 130, 1);
 }
+@media (max-width:768px){
+    .corner-img{
+        width: 230px;
+        top: 10px;
+        right: 10px;
+    }
+}
