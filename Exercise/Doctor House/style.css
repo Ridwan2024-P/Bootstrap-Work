@@ -92,6 +92,12 @@ color: (243, 243, 243, 1);
     right: -18px;
      background: rgba(247, 165, 130, 1);
 }
+
+
+/* Doctor Page */
+.doctor-header{
+    margin-top: 100px;
+}
 @media (max-width:992px){
     .content h1{
         margin-top: 100px;
