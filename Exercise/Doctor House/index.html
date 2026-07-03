@@ -15,7 +15,7 @@
     <header class="header">
 
      <!-- Navbar -->
-     <nav class=" navbar  border-bottom navbar-expand-lg fixed-top custom-nav  small mb-5 custom-nav" style="--bs-bg-opacity:0.9;">
+     <nav class=" navbar   navbar-expand-lg fixed-top custom-nav  small mb-5 custom-nav" style="--bs-bg-opacity:0.9;">
         <div class="container  ">
             <a href="#" class="navbar-brand brand-style">
                 <img src="img/Group 1.png" alt="" class="small">
@@ -44,7 +44,7 @@
           <div class="content text-md-center text-lg-start">
             <h1 class="text-light mb-3 ">Your Best Medical <br>Help Center</h1>
             <p class="text-light mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente atque neque cumque explicabo quia magni, repellat error enim doloremque?</p>
-            <a href="" class="btn text-white fw-bold d-block align-items-center col-md-3 " style="background-color: rgba(247, 165, 130, 1);" >All Service</a>
+            <a href="" class="btn text-white fw-bold d-block align-items-center col-lg-3 " style="background-color: rgba(247, 165, 130, 1);" >All Service</a>
         </div>
         </div>
         <div class="col-md-6">
@@ -65,8 +65,8 @@
      <section class="services-main ">
         <div class="container ">
             <div class="row mt-5">
-                <div class="col-md-6  services-img ">
-                    <img src="img/Rectangle 20078.png" alt="" class="img-fluid services-img mt-5">
+                <div class="col-md-6   services-img ">
+                    <img src="img/Rectangle 20078.png" alt="" class="img-fluid services-img mt-5 ">
                 </div>
                 <div class="col-md-6 ">
                     <div class="row mt-4 py-3 ">
@@ -74,21 +74,21 @@
                         <p class="fs-6 fw-normal text-secondary mt-4  d-flex justify-content-center justify-content-md-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vel possimus obcaecati, repellendus temporibus corporis repellat enim reiciendis labore autem nihil tempore libero est, nam facilis tempora dolores praesentium magnam?</p>
                          <img src="img/Rectangle 10.png" alt="" class="mt-4">
                          <div class="border d-inline-flex rounded bg-light p-0 mt-4">
-                            <div class="col-md-4  py-4 rounded rounded text-center fw-bold fs-5 rounded-3" style="background: rgba(247, 165, 130, 1);">
+                            <div class="col-md-4  py-4 rounded rounded text-center fw-bold fs-md-6 rounded-3" style="background: rgba(247, 165, 130, 1);">
                                 Cavity Protection
                             </div>
-                            <div class="col-md-4  py-4 rounded text-center fw-bold fs-5">
+                            <div class="col-md-4  py-4 rounded text-center fw-bold fs-md-6">
                                 Cosmetic Dentisty
                             </div>
-                            <div class="col-md-4  py-4 rounded text-center fw-bold fs-5">
+                            <div class="col-md-4  py-4 rounded text-center fw-bold fs-md-6">
                                Oral Surgery
                             </div>
                          </div>
-                         <h2 class="text-dark fw-bold mt-4">Electro  Gastrology Therapy</h2>
+                         <h2 class="text-dark fw-bold mt-4 ">Electro  Gastrology Therapy</h2>
                          <p class="fs-6 fw-normal text-secondary mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti magni laudantium veritatis aperiam itaque sequi minima temporibus ab debitis ut! Repellendus ab placeat magnam provident explicabo? Provident libero eos corrupti?</p>
                          
                          <p class="fs-6 fw-normal text-secondary mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ullam deserunt et vitae autem rerum nesciunt nihil eaque dolor hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, earum.</p>
-                         <button type="button" class="btn rounded-3 col-md-3 col-6 m-3" style="color: rgba(247, 165, 130, 1);border:2px solid rgba(247, 165, 130, 1); ">More Details</button>
+                         <button type="button" class="btn rounded-3 col-lg-3 col-6 m-3" style="color: rgba(247, 165, 130, 1);border:2px solid rgba(247, 165, 130, 1); ">More Details</button>
                         </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@
         <ul class="splide__list p-lg-4 p-5 ">
 
           <!-- Project 1 -->
-          <li class="splide__slide border p-lg-4  p-md-0 rounded-4 col-md-6">
+          <li class="splide__slide border p-lg-4 p-md-4 p-md-0 rounded-4 col-md-6">
             <article class="project container p-lg-5 ">
                 <div class="project-details d-flex justify-content-between">
                 <div class="project-img d-flex ">
@@ -205,9 +205,10 @@
       autoplay    : true,        
       interval    : 3000,        
       speed       : 800,         
-      pauseOnHover: false,       
-      pauseOnFocus: false,       
+      pauseOnHover: true,       
+      pauseOnFocus: true,       
       breakpoints : {
+        992 : { perPage: 1 },
         768 : { perPage: 1 }
       }
     }).mount();
