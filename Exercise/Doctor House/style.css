@@ -10,11 +10,15 @@
     color: rgba(255, 255, 255, 1);
 
 }
-.section-patients-says-body h1{
+.section-patients-says-body h1,.section-expert-doctor h1{
     font-family: Source Sans 3;
     font-size: 40px;     
 }
-.section-patients-says-body p{
- 
+
+.custom-placeholder::placeholder,.custom-placeholder {
+    color: #ffffff !important;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none;     /* IE 10 and IE 11 */
+    user-select: none; 
 }
 
