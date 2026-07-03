@@ -1,8 +1,47 @@
-.navbar {
-    background: url('img/Rectangle 1.png') center / cover no-repeat;
+.header{
+    background: rgba(7, 51, 47, 1);
+   
+
+}
+.navbar{
+    background: rgba(7, 51, 47, 1);
+}
+.content-header{
+    height: 800px;
+}
+.content h1{
+    font-family: Source Sans 3;font-weight: 600;
+font-style: SemiBold;
+font-size: 75px;
+line-height: 90px;
+letter-spacing: 0%;
+
+}
+.content  p{
+  
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+color: (243, 243, 243, 1);
+}
+.body{
+     font-family: Source Sans 3;
+}
+.nav-item a{
+    font-size: 18px;  
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
 }
 .card-info-body p{
-    font-family: Source Sans 3;
+
     font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
@@ -54,6 +93,39 @@
      background: rgba(247, 165, 130, 1);
 }
 @media (max-width:768px){
+    .content h1{
+        margin-top: 100px;
+        font-family: Source Sans 3;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 30px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+
+    }
+    .content p{
+        
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+
+    .content-header{
+    height: 375px;
+}
+
+    .content-header img{
+     width: 335px;
+     height: 240px;
+
+    }
+  
     .corner-img{
         width: 230px;
         top: 10px;
