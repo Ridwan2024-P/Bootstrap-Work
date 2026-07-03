@@ -14,11 +14,42 @@
     font-family: Source Sans 3;
     font-size: 40px;     
 }
+.project-img img{
+    width: 66px;
+    height: 66px;
+    object-fit: cover;
+    border: 1px solid rgba(247, 165, 130, 1);
+    
+
+}
+.quote-img{
+    width: 54px;
+    height: 42px;
+}
 
 .custom-placeholder::placeholder,.custom-placeholder {
     color: #ffffff !important;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none;     /* IE 10 and IE 11 */
-    user-select: none; 
+   
+}
+.splide__arrow {
+   
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+}
+.splide__arrow--prev svg {
+    fill:  rgba(247, 165, 130, 1); 
+}
+.splide__arrow--next svg {
+    fill:  #ffff; 
+}
+.splide__arrow--prev {
+    left: -18px;
+    background-color: white;
+    border: 1px solid rgba(247, 165, 130, 1);
 }
 
+.splide__arrow--next {
+    right: -18px;
+     background: rgba(247, 165, 130, 1);
+}
