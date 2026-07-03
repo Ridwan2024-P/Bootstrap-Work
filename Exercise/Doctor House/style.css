@@ -98,6 +98,20 @@ color: (243, 243, 243, 1);
 .doctor-header{
     margin-top: 100px;
 }
+.img-service{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 65, 85, 0.1);
+     padding: 20px;
+    
+}
+.img-service img{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    display: block;
+   
+}
 
 @media (max-width:992px){
     .content h1{
