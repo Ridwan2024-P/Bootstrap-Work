@@ -114,6 +114,35 @@ color: (243, 243, 243, 1);
    
 }
 
+/* file */
+   .upload-box{
+            border:2px dashed #d9d9d9;
+            border-radius:8px;
+            height:140px;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        .upload-box:hover{
+            border-color:#0d6efd;
+            background:#f8f9fa;
+        }
+
+        .upload-box i{
+            font-size:38px;
+            color:#999;
+        }
+
+        .upload-box p{
+            color:#999;
+            font-size:18px;
+            margin-bottom:10px;
+        }
+
+        input[type="file"]{
+            display:none;
+        }
+
 @media (max-width:992px){
     .content h1{
         margin-top: 100px;
