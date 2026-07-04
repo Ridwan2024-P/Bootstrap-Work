@@ -74,6 +74,8 @@
                             data-coreui-locale="en-US"
                             data-coreui-start-date="2026/07/4"
                             data-coreui-toggle="calendar"
+                            id="myCalendar"
+
                         ></div>
                         </div> 
             </div>
@@ -84,10 +86,82 @@
         </div>
     </div>
  </section>
+ 
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
 
+            <div class="modal-header  text-dark">
+                <h5 class="modal-title">Cavity Protection</h5>
 
+                <button
+                    type="button"
+                    class="btn-close  text-white rounded-pill p-2" style="background-color:rgba(7, 51, 47, 1); color:white;"
+                    data-bs-dismiss="modal">
+                </button>
+            </div>
 
-<style></style>
+            <div class="modal-body">
+
+                <form>
+
+                    <div class="row g-3">
+
+                        <div class="col-12">
+                            <input type="text" class="form-control form-control-sm select" readonly value="April 30,2020">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control form-control-sm" value="10:05am - 11:30am" readonly>
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="text" class="form-control form-control-sm" placeholder="Full Name" required>
+                        </div>
+
+                       <div class="col-md-12">
+                            <input type="tel" class="form-control form-control-sm" placeholder="Phone Number" required>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="email" class="form-control form-control-sm" placeholder="Email ID" required>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-success w-100" style="background-color:rgba(7, 51, 47, 1); color:white;"> 
+                                Submit
+                            </button>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+    setTimeout(function () {
+
+        const calendar = document.getElementById("myCalendar");
+
+        calendar.addEventListener("click", function () {
+
+            const modal = new bootstrap.Modal(
+                document.getElementById("appointmentModal")
+            );
+
+            modal.show();
+
+        });
+
+    }, 500);
+
+});
+</script>
+
 <!-- Service -->
  <div class="container mt-5">
     
