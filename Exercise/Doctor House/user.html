@@ -35,7 +35,7 @@
                      <li class="nav-item "><a href="appointment.html" class="nav-link text-white me-3 " >Reviews</a></li>
                       <li class="nav-item "><a href="appointment.html" class="nav-link text-white me-3 " >Contact Us</a></li>
                     <li class="nav-item "><a href="login.html" class="nav-link text-white me-3" style="background: rgba(247, 165, 130, 1);;">Login</a></li>
-                     <li class="nav-item "><a href="login.html" class="nav-link text-white me-3" style="background: rgba(247, 165, 130, 1);;">Login</a></li>
+                   
                     
                 </ul>  
             </div>
@@ -78,14 +78,14 @@
                             <th class="text-secondary">1/10/12</th>
                             <th class="text-secondary">06:30pm</th>
                             <th class="text-secondary">Cavity Protection</th>
-                            <th class="text-secondary"><div > <a href="#" class="btn text-white" style="background-color:rgba(7, 51, 47, 1);" >Pay</a></th></div>     
+                            <th class="text-secondary"><div > <a href="#" class="btn text-white" style="background-color:rgba(7, 51, 47, 1);"data-bs-toggle="modal" data-bs-target="#pay" >Pay</a></th></div>     
                         </tr>
                         <tr class="fw-normal small">
                             <th class="text-secondary"><span class="me-4 text-secondary">1</span> Ahsan, Md Ridwan Bin</th>
                             <th class="text-secondary">1/10/12</th>
                             <th class="text-secondary">06:30pm</th>
                             <th class="text-secondary">Cavity Protection</th>
-                            <th class="text-secondary"><div > <a href="#" class="btn text-white" style="background-color:rgba(7, 51, 47, 1);" >Pay</a></th></div>     
+                            <th class="text-secondary"><div > <a href="#" class="btn text-white" style="background-color:rgba(7, 51, 47, 1);" data-bs-toggle="modal" data-bs-target="#pay" >Pay</a></th></div>     
                         </tr>
 
                     </table>
@@ -95,7 +95,88 @@
             </div>
         </div>
      </div>
-    
+
+
+
+     <!-- Pay -->
+      <div class="modal fade" id="pay" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header  ">
+              
+
+                <button
+                    type="button"
+                    class="btn-close btn-close btn-close-suceess  text-white rounded-pill p-2" style="background-color:rgba(7, 51, 47, 1); color:white;"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+              
+
+          <div class="modal-body">
+
+    <div class="text-center mb-4">
+        <h5 class="fw-bold mb-2">Payment Details</h5>
+
+        <p class="text-secondary mb-1">
+            Hello, <strong>Awlad</strong>
+        </p>
+
+        <p class="mb-2">
+            Please complete your payment for
+            <strong>Teeth Cleaning</strong>
+        </p>
+
+        <p class="text-secondary mb-2">
+            <i class="bi bi-calendar-event me-2"></i>
+            Nov 09, 2022
+            <br>
+            <i class="bi bi-clock me-2"></i>
+            08:00 AM – 08:30 AM
+        </p>
+
+        <h4 class="fw-bold" style="color: rgba(7, 51, 47, 1);">
+            $200
+        </h4>
+    </div>
+
+    <form>
+
+        <div class="row g-3">
+
+            <div class="col-12">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Card Number"
+                    required>
+            </div>
+
+            <div class="col-6">
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="MM/YY"
+                    required>
+            </div>
+
+            <div class="col-6">
+                <input type="password" class="form-control" placeholder="CVC" required>
+            </div>
+            <div class="col-12">
+                <button class="btn w-100 text-white"
+                    style="background-color: rgba(7, 51, 47, 1);">
+                    Pay Now
+                </button>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
 
 
 
