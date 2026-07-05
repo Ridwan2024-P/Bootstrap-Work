@@ -9,6 +9,12 @@
 .content-header{
     height: 800px;
 }
+
+.navbar-toggler {
+     background:rgba(247,165,130,1);
+    border-radius:8px;
+    padding:8px 10px;
+}
 .content h1{
     font-family: Source Sans 3;font-weight: 600;
 font-style: SemiBold;
