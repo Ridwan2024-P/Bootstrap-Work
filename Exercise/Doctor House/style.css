@@ -3,7 +3,7 @@
    
 
 }
-.navbar{
+.navbar,.bf-info{
     background: rgba(7, 51, 47, 1);
 }
 .drop{
@@ -11,7 +11,12 @@
     border: none;
     color: #fff;
 }
+.bf-info:focus,
 
+.bf-info.show,
+.drop:focus,
+.drop:active,
+.drop.show
 .drop:hover,
 .drop:focus,
 .drop:active,
