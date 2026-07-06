@@ -6,6 +6,21 @@
 .navbar{
     background: rgba(7, 51, 47, 1);
 }
+.drop{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.drop:hover,
+.drop:focus,
+.drop:active,
+.drop.show{
+    background: transparent !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+}
 .content-header{
     height: 800px;
 }
@@ -35,7 +50,7 @@ color: (243, 243, 243, 1);
 .body{
      font-family: Source Sans 3;
 }
-.nav-item a{
+.nav-item a,.drop{
     font-size: 18px;  
     font-weight: 600;
     font-style: SemiBold;
