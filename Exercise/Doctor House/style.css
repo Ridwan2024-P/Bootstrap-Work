@@ -3,27 +3,22 @@
    
 
 }
-.navbar,.bf-info{
+.navbar,.bf-info,.dropdown-menu{
     background: rgba(7, 51, 47, 1);
 }
 .drop{
     background: transparent;
     border: none;
-    color: #fff;
+
 }
-.bf-info:focus,
-.bf-info.show,
-.drop:focus,
-.drop:active,
-.drop.show
-.drop:hover,
-.drop:focus,
-.drop:active,
-.drop.show{
-    background: transparent !important;
-    color: #fff !important;
-    border: none !important;
-    box-shadow: none !important;
+
+
+.dropdown-item {
+    color:#ffff;
+}
+.dropdown-item:hover{
+    background-color: rgba(247, 165, 130, 1);
+    color:#fff;
 }
 .content-header{
     height: 800px;
