@@ -3,13 +3,16 @@
    
 
 }
-.navbar,.bf-info,.dropdown-menu{
+.navbar,.bf-info{
     background: rgba(7, 51, 47, 1);
 }
 .drop{
     background: transparent;
     border: none;
 
+}
+.dropdown-menu{
+  background-color: rgba(247, 165, 130, 1);
 }
 #reviews,
 #business,
@@ -21,7 +24,7 @@
     color:#ffff;
 }
 .dropdown-item:hover{
-    background-color: rgba(247, 165, 130, 1);
+   background: rgba(7, 51, 47, 1);
     color:#fff;
 }
 .content-header{
