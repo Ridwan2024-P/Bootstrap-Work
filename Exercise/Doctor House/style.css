@@ -11,7 +11,11 @@
     border: none;
 
 }
-
+#reviews,
+#business,
+#location {
+    scroll-margin-top: 100px; 
+}
 
 .dropdown-item {
     color:#ffff;
@@ -202,4 +206,28 @@ color: (243, 243, 243, 1);
         top: 10px;
         right: 10px;
     }
+    .splide__arrow {
+   
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+}
+.splide__arrow--prev svg {
+    fill:  rgba(247, 165, 130, 1); 
+}
+.splide__arrow--next svg {
+    fill:  #ffff; 
+}
+.splide__arrow--prev {
+    left: -10px;
+    background-color: white;
+    border: 1px solid rgba(247, 165, 130, 1);
+}
+
+.splide__arrow--next {
+    right: -10px;
+     background: rgba(247, 165, 130, 1);
+}
+
+    
 }
