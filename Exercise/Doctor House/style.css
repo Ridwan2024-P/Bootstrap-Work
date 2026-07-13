@@ -6,6 +6,10 @@
 .navbar,.bf-info{
     background: rgba(7, 51, 47, 1);
 }
+.nav-link.active {
+    color: #fff !important;
+    border-bottom: 2px solid rgba(247, 165, 130, 1);
+}
 .drop{
     background: transparent;
     border: none;
@@ -170,6 +174,20 @@ color: (243, 243, 243, 1);
             display:none;
         }
 
+        /* Login Page */
+        
+.left-side{
+    background: rgba(7, 51, 47, 1);
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-img{
+    max-width: 75%;
+    height: auto;
+    z-index: 2;
+}
 @media (max-width:992px){
     .content h1{
         margin-top: 100px;
