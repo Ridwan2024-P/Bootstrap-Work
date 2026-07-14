@@ -1,3 +1,7 @@
+
+.mb-10{
+ margin-bottom: 10px;
+}
 .mb-20{
     margin-bottom: 20px;
 }
@@ -45,6 +49,14 @@ color: rgba(243, 243, 243, 1);
 }
 .p-10{
     padding: 10px 23px;
+}
+.p-14{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 14px 23px 14px 24px;
 }
 
 .doctor-img{
@@ -214,3 +226,76 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+
+
+
+/* Index Page */
+    .service-description{
+        max-width: 438px;
+        font-family: Source Sans 3;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 26px;
+        letter-spacing: 0%;
+
+
+}
+ .p-27 {
+        padding: 27px 16px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    #serviceTab {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+          -webkit-overflow-scrolling: touch;
+    }
+
+    #serviceTab::-webkit-scrollbar {
+        display: none;
+    }
+
+    #serviceTab .nav-item {
+        flex: 1;
+    }
+
+    #serviceTab .nav-link {
+        width: 100%;
+        color: #000;
+        border-radius: 12px;
+    }
+
+    #serviceTab .nav-link.active {
+        background: rgba(247, 165, 130, 1);
+        color: #fff;
+    }
+
+     @media (max-width: 767.98px) {
+        #serviceTab .nav-item {
+            flex: 0 0 50%; 
+        }
+
+        .p-27 {
+            padding: 18px 12px;
+            font-size: 16px;
+         }
+           .contact-with-us{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .mt-32{
+    margin-top: 32px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+    }
