@@ -13,20 +13,15 @@
 
 }
 .dropdown-menu{
-  background-color: rgba(247, 165, 130, 1);
+ background-color: #503615;
  
-}
-#reviews,
-#business,
-#location {
-    scroll-margin-top: 100px; 
 }
 
 .dropdown-item {
     color:#ffff;
 }
 .dropdown-item:hover{
-   background: rgba(7, 51, 47, 1);
+   
     color:#fff;
 }
 .content-header{
