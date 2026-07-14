@@ -200,3 +200,17 @@ letter-spacing: 0%;
         flex: 0 0 auto;
     }
 }
+
+
+.section-expert-doctor{
+    overflow-x: hidden;
+}
+
+.card{
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
