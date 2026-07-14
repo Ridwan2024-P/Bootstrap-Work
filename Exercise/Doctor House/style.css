@@ -6,10 +6,7 @@
 .navbar,.bf-info{
     background: rgba(7, 51, 47, 1);
 }
-.nav-link.active {
-    color: #fff !important;
-    border-bottom: 2px solid rgba(247, 165, 130, 1);
-}
+
 .drop{
     background: transparent;
     border: none;
@@ -71,6 +68,50 @@ color: (243, 243, 243, 1);
     letter-spacing: 0%;
 
 
+}
+/* Navbar Links */
+.navbar-nav .nav-link{
+    position: relative;
+    display: inline-block;
+    color: #fff !important;
+    font-weight: 500;
+    transition: color .3s ease;
+    background: transparent !important;
+    
+}
+
+/* Underline */
+.navbar-nav .nav-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background: rgba(247, 165, 130, 1);
+    transition: width .35s ease;
+}
+
+
+
+.navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active{
+    color: rgba(247, 165, 130, 1) !important;
+    background: transparent !important;
+}
+
+.navbar-nav .nav-link.active::after{
+    width: 100%;
+}
+
+/* Remove Bootstrap focus styles */
+.navbar-nav .nav-link:focus{
+    color: rgba(247, 165, 130, 1) !important;
+    box-shadow: none;
 }
 .card-info-body p{
 
