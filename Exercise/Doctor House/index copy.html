@@ -1,491 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="custom.css">
-    <title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phone Hover Menu</title>
+
+<style>
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#002d3c;
+}
+
+/* Main Container */
+#div1{
+    width:600px;
+    height:100px;
+    border:20px solid #444;
+    border-radius:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Phone Circle */
+#divaa2{
+    position:relative;
+    width:80px;
+    height:80px;
+    border:5px solid orange;
+    border-radius:50%;
+    background:orange;
+    overflow:hidden;
+    transition:.6s;
+}
+
+#divaa2:hover{
+    height:200px;
+}
+
+/* Left Extension */
+#divaaa2{
+    position:absolute;
+    top:-5px;
+    left:-25px;
+    width:25px;
+    height:80px;
+    border:5px solid orange;
+    border-radius:100px;
+    background:orange;
+    transition:.6s;
+}
+
+#divaa2:hover #divaaa2{
+    height:200px;
+}
+
+/* Phone Icon */
+#img3{
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:60px;
+}
+
+/* Buttons */
+#btnb1,
+#btnb2{
+    position:absolute;
+    left:2px;
+    width:75px;
+    padding:6px;
+    border:none;
+    border-radius:20px;
+    background:#555;
+    color:transparent;
+    cursor:pointer;
+    transition:.6s;
+}
+
+/* Hidden Initially */
+#btnb1{
+    top:0;
+    background:transparent;
+}
+
+#btnb2{
+    top:0;
+    background:transparent;
+}
+
+/* Hover Animation */
+#divaa2:hover #btnb1{
+    top:90px;
+    color:#fff;
+    background:#555;
+}
+
+#divaa2:hover #btnb2{
+    top:140px;
+    color:#fff;
+    background:#555;
+}
+</style>
+
 </head>
-
-
 <body>
-    
-<div class="dropdown-menu">
-  <a class="dropdown-item" href="#">Regular link</a>
-  <a class="dropdown-item disabled" href="#">Disabled link</a>
-  <a class="dropdown-item" href="#">Another link</a>
+
+<div id="div1">
+
+    <div id="divaa2">
+
+        <img id="img3"
+        src="https://cdn-icons-png.flaticon.com/512/159/159832.png"
+        alt="Phone">
+
+        <div id="divaaa2"></div>
+
+        <input id="btnb1" type="button" value="Phone">
+
+        <input id="btnb2" type="button" value="Call">
+
+    </div>
+
 </div>
-    <header class="header">
 
-     <!-- Navbar -->
-     <nav class=" navbar   navbar-expand-lg fixed-top custom-nav  small mb-5 custom-nav" style="--bs-bg-opacity:0.9;">
-        <div class="container  ">
-            <a href="#" class="navbar-brand brand-style">
-                <img src="img/Group 1.png" alt="" class="small">
-                <span class=" fw-bold" style="color: rgba(247, 165, 130, 1);">Doc</span>
-                <span class="text-white fw-bold">House</span>
-            </a>
-            <button class="navbar-toggler border-0 " type="submit" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content"
-            aria-controls="#navbar-supported-content" aria-expanded="false" aria-label="Toggle Navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list text-light " viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg>
-            </button>
-            <div class="collapse navbar-collapse " id="navbar-supported-content">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0  p-2"  >
-                    <li class="nav-item "><a href="index.html" class="nav-link text-white active me-3 border-bottom border-warning border-2 " aria-current="page">Home</a></li>
-                    <li class="nav-item "><a href="about.html" class="nav-link text-white me-3 btn border-3">About</a></li>
-                    <li class="nav-item "><a href="appointment.html" class="nav-link text-white me-3">Appointment</a></li>
-                   <li class="dropdown ">
-                        <a class="btn drop me-2 text-white fw-semibold boder-0 p-0 mt-2 "
-                        href="#"
-                        role="button"
-                        id="dropdownMenuLink"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                            Doctor Profile
-                        </a>
-
-                        <ul class="dropdown-menu bg-color shadow " aria-labelledby="dropdownMenuLink ">
-                            <li><a href="doctor-profile.html" class="dropdown-item fs-6 fw-bold " href="#" >Karyen Anderson</a></li>
-                            <li><a class="dropdown-item fs-6 fw-bold " href="doctor-profile.html">Ahsan, Md Ridwan Bin</a></li>
-                            <li><a class="dropdown-item fs-6 fw-bold " href="doctor-profile.html" >Karyen Anderson</a></li>
-                        </ul>
-                    </li>
-                    
-                    
-                    <li class="nav-item "><a href="contact.html" class="nav-link mt-2 mt-md-0 text-white me-3">Contact</a></li>
-                    
-                    <li class="nav-item "><a href="login.html" class="nav-link text-white me-3">Login</a></li>
-                </ul>  
-            </div>
-        </div>
-     </nav> 
-     <div class="container">
-     <div class="row align-items-center">
-        <div class="col-md-6 d-flex justify-content-center align-items-center text-md-center ">
-          <div class="content text-md-center text-lg-start">
-            <h1 class="text-light mb-3 ">Your Best Medical <br>Help Center</h1>
-            <p class="text-light mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla sapiente atque neque cumque explicabo quia magni, repellat error enim doloremque?</p>
-            <a href="#services-main" class="btn text-white fw-bold d-block align-items-center col-lg-3 " style="background-color: rgba(247, 165, 130, 1);" >All Service</a>
-        </div>
-        </div>
-        <div class="col-md-6">
-           <div class="content-header d-flex justify-content-center align-items-center ">
-           <img src="img/Group 34991.png" alt="">
-          </div>
-        </div>
-     </div>
-</div>
-     
-     
-</header>
-     
-
-    <!-- Navbar-->
-
-    <!-- Services -->
-     <section class="services-main " id="services-main">
-        <div class="container ">
-            <div class="row mt-5">
-                <div class="col-md-6   services-img ">
-                    <img src="img/Rectangle 20078.png" alt="" class="img-fluid services-img mt-5  ">
-                </div>
-                <div class="col-md-6 ">
-                    <div class="row mt-4 py-4 ">
-                        <h1 class="text-dark fw-bold mt-0 d-flex justify-content-center justify-content-md-start ">Our Services</h1>
-                        <p class="fs-6 fw-normal text-secondary mt-2  d-flex justify-content-center justify-content-md-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vel possimus obcaecati, repellendus temporibus corporis repellat enim reiciendis labore autem nihil tempore libero est, nam facilis tempora dolores praesentium magnam?</p>
-                         
-                         <div class=" rounded  mt-4 ">
-                            
-                            <div class="border rounded-4 col-md-12 d-flex">
-                            <div class="col-md-4 col-6 border  py-4 rounded rounded text-center fw-bold fs-md-6 rounded-3" style="background: rgba(247, 165, 130, 1);">
-                                Cavity Protection
-                            </div>
-                            <div class="col-md-4  col-6 py-4 rounded text-center fw-bold fs-md-6">
-                                Cosmetic Dentisty
-                            </div>
-                            <div class="col-md-4  py-4 rounded text-center fw-bold fs-md-6 d-none d-lg-block">
-                               Oral Surgery
-                            </div></div>
-                         </div><img src="img/Rectangle 10.png" alt="" class="mt-4">
-                        
-                         <h2 class="text-dark fw-bold mt-4 ">Electro  Gastrology Therapy</h2>
-                         <p class="fs-6 fw-normal text-secondary mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti magni laudantium veritatis aperiam itaque sequi minima temporibus ab debitis ut! Repellendus ab placeat magnam provident explicabo? Provident libero eos corrupti?</p>
-                         
-                         <p class="fs-6 fw-normal text-secondary mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ullam deserunt et vitae autem rerum nesciunt nihil eaque dolor hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, earum.</p>
-                         <a type="button" href="404.html" class="btn rounded-3 col-lg-3 col-6 m-3" style="color: rgba(247, 165, 130, 1);border:2px solid rgba(247, 165, 130, 1); ">More Details</a>
-                        </div>
-                </div>
-            </div>
-        </div>
-     </section>
-
-<!-- Card -->
-
-<section class="card-info">
-     <div class="container">
-        <div class="row mt-5 mb-5 g-3">
-            <div class="col-xl-4 col-lg-12  col-12">
-                <div class="card-items d-flex justify-content-center py-5 rounded-4 " style="background-color: rgba(7, 51, 47, 1); ">
-                    <div class="card-info-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-clock me-4 mt-2 text-white" viewBox="0 0 16 16">
-                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
-                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
-                        </svg>
-                    </div>
-                     <div class="card-info-body">
-                        <h1 class="fw-bold text-white fs-2" >Opening Hourse</h1>
-                        <p>Open 9.00 am to 5.00 pm <br>Everyday</p>
-                     </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6  col-12">
-                <div class="card-items d-flex justify-content-center py-5 rounded-4 " style="background: rgba(247, 165, 130, 1);">
-                    <div class="card-info-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi text-white bi-geo-alt  me-4 mt-2 " viewBox="0 0 16 16">
-                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                        </svg>
-                    </div>
-                     <div class="card-info-body"  >
-                        <h1 class="fw-bold  fs-2 text-white"  >Our Locations</h1>
-                        <p  class="text-white">
-                           Road:-9/A,Dhanmondi,<br>  Dhaka-1209</p>
-                     </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6  col-12">
-                <div class="card-items d-flex justify-content-center py-5 rounded-4 " style="background-color: rgba(7, 51, 47, 1); ">
-                    <div class="card-info-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telephone-outbound me-3 mt-3 text-white" viewBox="0 0 16 16">
-                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"/>
-                        </svg>
-                    </div>
-                     <div class="card-info-body">
-                        <h1 class="fw-bold text-white fs-2" >Contact Us</h1>
-                        <p>+88 01875667000 <br>
-                            +88 01875667000</p>
-                     </div>
-                </div>
-            </div>
-        </div>
-     </div>
-</section>
-
-<!-- Our Patients says -->
- <section class="section-patients-says">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-9">
-                <div class="text-center section-patients-says-body">
-                    <h1 class="fw-bold text-dark mb-4 ">What Our Patients Says</h1>
-                    <p class="text-secondary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-            </div>
-        </div>
-    </div>
- </section>
-
-
- <section class="py-lg-5 container" id="projects">
-    <!-- Splide Slider -->
-    <div class="splide container  " id="project-slider">
-      <div class="splide__track row">
-        <ul class="splide__list px-2 py-4 p-lg-4 p-md-4">
-
-          <!-- Project 1 -->
-          <li class="splide__slide border p-lg-4 p-md-4 p-3 rounded-4 col-md-6">
-            <article class="project container p-lg-5 ">
-                <div class="project-details d-flex justify-content-between">
-                <div class="project-img d-flex ">
-                    <img src="img/9819cd845bacf61bbd83d510efc41c22ede95294.jpg" alt="" class="rounded-pill me-4"/>
-                        <div class="project-img-name">
-                            <h5>Awlad Hossain</h5>
-                            <p>Product Designer</p>
-                        </div>
-                   </div>
-                 <img src="img/Quote_1_.png" alt="" class="quote-img d-none d-sm-block">
-              </div>
-              <div class="mt-3" style="color: rgba(108, 107, 107, 1);">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime vitae impedit magnam cupiditate quo provident accusantium velit? Illo in atque facere omnis nesciunt possimus quis voluptas vero dolore recusandae, asperiores commodi, porro libero. Consequuntur non ea alias est dicta esse, accusantium ab dolorem quia pariatur quas iste modi placeat a.
-              </div>
-              <img src="img/Quote_1_.png" alt="" class="quote-img mt-3  d-sm-none d-block" >
-            </article>
-          </li>        
-        </ul>
-      </div>
-    </div>
-  </section>
-
- 
-  
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    new Splide('#project-slider', {
-      type        : 'loop',
-      perPage     : 2,
-      gap         : '2rem',
-      autoplay    : true,        
-      interval    : 3000,        
-      speed       : 800,         
-      pauseOnHover: true,       
-      pauseOnFocus: true,       
-      breakpoints : {
-        992 : { perPage: 1 },
-        768 : { perPage: 1 }
-      }
-    }).mount();
-  });
-</script>
-
-
- <!-- Our Expert Doctor -->
-
- <section class="section-expert-doctor">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-9  ">
-                <div class="text-center section-expert-doctor-body text-center">
-                    <h1 class="fw-bold text-dark mb-4 ">Our Expert Doctors</h1>
-                    <p class="text-secondary ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-2 g-5">
-             <div class="col-lg-4 col-md-12  col-12">
-                    <div class="card p-4 rounded-4">
-                        <div class="card-img ">
-                            <img src="img/1828f09164f45a470b91f81df35a0bf5f48b1d63.jpg" class="card-img-top rounded-3" alt="...">
-                            <div class="card-body">
-                            <h2 class="card-title fs-20">Karyen Anderson</h2>
-                            <p class="card-text mb-1">BTP -  Senior Physiotherapist.</p>
-                            <img src="img/Group 24.png " alt="">   
-                        </div>  
-                        <hr class=" " style="border: 1px solid rgba(230, 230, 230, 1)">
-                        <div class="card-body" style="color: rgba(108, 107, 107, 1);" >
-                            <div class="card-icon d-inline-flex mb-2" >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi mt-1 text-secondary me-3 bi-geo-alt " viewBox="0 0 16 16">
-                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                            </svg>
-                            <p class=" fs-6">Dhanmondi, Dhaka, Bangladesh</p>
-                            </div>
-                            <div class="card-icon d-inline-flex mb-2 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi mt-1 text-secondary me-3  bi-calendar" viewBox="0 0 16 16">
-                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                            </svg>
-                            <p class=" fs-6">Available On Mon, 22 December</p>
-                            </div>
-                            <div class="card-icon d-flex mb-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi mt-1 text-secondary me-3 bi-currency-dollar rounded-pill border" viewBox="0 0 16 16">
-                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
-                            </svg>
-                            <p class="text-secondary mt-1  fs-6">$15</p>
-                            </div>
-                        </div>
-                         <a href="doctor-profile.html" class="btn col-12 fw-bold rounded-3 p-3" style="color: rgba(247, 165, 130, 1); border: 2px solid rgba(247, 165, 130, 1); font-size:20px;">View Profile</a>
-                    </div>
-                </div> 
-             </div>
-             <div class="col-lg-4 col-md-12  col-12 ">
-                    <div class="card p-4 rounded-4">
-                        <div class="card-img ">
-                            <img src="img/bc90b99bd51ade374cf8ab0c0d8f733359205389.jpg" class="card-img-top rounded-3" alt="...">
-                            <div class="card-body">
-                            <h2 class="card-title fs-20">Karyen Anderson</h2>
-                            <p class="card-text mb-1">BTP -  Senior Physiotherapist.</p>
-                            <img src="img/Group 24.png " alt="">   
-                        </div>  
-                        <hr class="" style="border: 1px solid rgba(230, 230, 230, 1)">
-                        <div class="card-body">
-                            <div class="card-icon d-inline-flex mb-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi mt-1 text-secondary me-3 bi-geo-alt " viewBox="0 0 16 16">
-                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                            </svg>
-                            <p class="text-secondary fs-6">Dhanmondi, Dhaka, Bangladesh</p>
-                            </div>
-                            <div class="card-icon d-inline-flex mb-2 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi mt-1 text-secondary me-3  bi-calendar" viewBox="0 0 16 16">
-                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                            </svg>
-                            <p class="text-secondary fs-6">Available On Mon, 22 December</p>
-                            </div>
-                            <div class="card-icon d-flex mb-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi mt-1 text-secondary me-3 bi-currency-dollar rounded-pill border" viewBox="0 0 16 16">
-                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
-                            </svg>
-                            <p class="text-secondary mt-1 fs-6">$15</p>
-                            </div>
-                        </div>
-                         <a href="doctor-profile.html" class="btn col-12 text-white fw-bold rounded-3 p-3 " style="background-color: rgba(247, 165, 130, 1); border: 2px solid rgba(247, 165, 130, 1); font-size:20px;">View Profile</a>
-                    </div>
-                </div> 
-             </div>
-             <div class="col-lg-4 col-md-12">
-                    <div class="card p-4 rounded-4 ">
-                        <div class="card-img ">
-                            <img src="img/76337279fb1ce92d6fb8d18a8232bfdf183130ad.jpg" class="card-img-top rounded-3" alt="...">
-                            <div class="card-body">
-                            <h2 class="card-title fs-20">Karyen Anderson</h2>
-                            <p class="card-text doctor-card-p mb-1">BTP -  Senior Physiotherapist.</p>
-                            <img src="img/Group 24.png " alt="" class="img-start">   
-                        </div>  
-                        <hr class="" style="border: 1px solid rgba(230, 230, 230, 1)">
-                        <div class="card-body">
-                            <div class="card-icon d-inline-flex mb-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi mt-1 text-secondary me-3 bi-geo-alt " viewBox="0 0 16 16">
-                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                            </svg>
-                            <p class="text-secondary fs-6">Dhanmondi, Dhaka, Bangladesh</p>
-                            </div>
-                            <div class="card-icon d-inline-flex mb-2 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi mt-1 text-secondary me-3  bi-calendar" viewBox="0 0 16 16">
-                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                            </svg>
-                            <p class="text-secondary fs-6">Available On Mon, 22 December</p>
-                            </div>
-                            <div class="card-icon d-flex mb-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi mt-1 text-secondary me-3 bi-currency-dollar rounded-pill border" viewBox="0 0 16 16">
-                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
-                            </svg>
-                            <p class="text-secondary  mt-1 fs-6">$15</p>
-                            </div>
-                        </div>
-                         <a href="doctor-profile.html" class="btn col-12 fw-bold rounded-3 p-3" style="color: rgba(247, 165, 130, 1); border: 2px solid rgba(247, 165, 130, 1); font-size:20px;">View Profile</a>
-                    </div>
-                </div> 
-             </div>
-        </div>
-    </div>
- </section>
-
-
- <!-- Contact With Us -->
-  <section class="contact-with-us">
-    <div class="container rounded-4 my-5 p-md-5" style="background: rgba(7, 51, 47, 1);">
-        <div class="row jusfity-content-center align-items-center d-flex p-5" >
-            <div class="col-md-12 col-lg-6 text-white ">
-                <h1 class=" fw-bold fs-1">Contact With Us</h1>
-                <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi.</p>
-                <div>
-                <div class="contact-icon d-flex"mt-3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi text-white me-3 bi-telephone-outbound" viewBox="0 0 16 16">
-                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"/>
-                    </svg>
-                    <p>+88017875667000</p>
-                </div>
-                <div class="contact-icon d-flex mt-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi me-3 bi-geo-alt" viewBox="0 0 16 16">
-                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                    </svg>
-                    <p>Dhanmondi, Dhaka, Bangladesh</p>
-                </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-            <form action="">
-                <div class="row g-4 ">
-                   
-                <div class="col-md-6 text-white">
-                    <input type="text" name="name" id="name" class="form-control  text-info  p-3  custom-placeholder border-0   " style="background: rgba(255, 255, 255, 0.05);" placeholder="Name" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="email" name="email" id="email" class="form-control  p-3 custom-placeholder border-0  " style="background: rgba(255, 255, 255, 0.05);" placeholder="Email" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="tel" name="phone" id="phone" class="form-control  p-3 custom-placeholder border-0 " style="background: rgba(255, 255, 255, 0.05);" placeholder="Mobile Phone"  required>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" name="d_name" id="d_name" class="form-control  p-3 custom-placeholder border-0 " style="background: rgba(255, 255, 255, 0.05);" placeholder="Doctor Name" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="date" name="name" id="name" class="form-control  p-3 custom-placeholder text-white border-0 " style="background: rgba(255, 255, 255, 0.05);" placeholder="Date" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="time" name="time" id="time" class="form-control  p-3  text-white border-0 " style="background: rgba(255, 255, 255, 0.05);" placeholder="Time" required>
-                </div>
-                
-                <div class="col-md-12">
-                    <input type="submit"  class="btn  col-md-12 col-12 text-white fw-bold p-2 p-md-2 fs-6 fs-md-6" value="Book Now" style="background: rgba(247, 165, 130, 1);">
-                </div>
-                </div>
-            </form>
-            </div>
-        </div>
-    </div>
-  </section>
-
- <!-- Footer -->
-
- <footer class="footer bg-light text-dark">
-    <div class="container pt-5">
-        <div class="row mt-0 mx-auto text-center mt-md-2 ">
-            <div class="col-lg-5  col-md-12 text-lg-start " >
-                <div class="logo d-inline-flex mb-20">
-                    <img src="img/Group 2.png" alt="" class="me-2 ">
-                     <h5 class="me-4 mt-2 fw-bold fs-2" style="color: rgba(247, 165, 130, 1);">Doc <span class="" style="color: rgba(7, 51, 47, 1);"> House</span></h5>  
-                </div>
-                <p class="text-dark fw-light mb-20">Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. has been since <br>
-                     the printer took.</p>
-                <a href="appointment.html" class="btn mb-20 p-3 fw-bold col-md-6 rounded-3 fs-6" style=" border:2px solid  rgba(247, 165, 130, 1); color: rgba(247, 165, 130, 1);">Appointment</a>
-            </div>
-            <div class="col-lg-2 col-md-12 text-center text-md-start">
-                <h5 class="fw-bold fs-5 mb-20 mt-3 mt-lg-0">Quick Links</h5>
-                <ul class="list-unstyled">
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold ">About Us</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none  text-secondary fw-semibold">Services</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Doctor</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Department</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Online Payment</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Contact Us</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">My Account</a></li>
-                </ul>
-            </div>
-             <div class="col-lg-2 col-md-12 text-center text-md-start">
-                <h5 class="fw-bold fs-5 mb-20">Doc House Service</h5>
-                <ul class="list-unstyled  ">
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Pediatric Clinic</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none  text-secondary fw-semibold">Diagnosis Clinic</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Cardiac Clinic</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Laboratory Analysis</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Gynecological Clinic</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Personal Counseling</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Dental Clinic</a></li>
-                </ul>
-            </div>
-             <div class="col-lg-2 col-md-12 text-center text-md-start">
-                <h5 class="fw-bold fs-5 mb-20">Working Hours</h5>
-                <ul class="list-unstyled">
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Monday- 10 am to 7pm</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none  text-secondary fw-semibold">Tuesday- 10 am to 7pm</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Wednesday-10 am to 7pm</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Thuesday- 10 am to 7pm</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Friday- 10 am to 7pm</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">saturday  10 am to 7pm</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none text-secondary fw-semibold">Sunday- 10 am to 7pm</a></li>
-                </ul>
-            </div>
-        </div>
-         <hr>
-        <div class=" text-center ">
-            <a href="https://github.com/Ridwan2024-P/Bootstrap-Work/tree/main/Exercise/Doctor%20House" class="text-decoration-none text-secondary fs-6 py-3">Copy Right : Ahsan, Md Ridwan Bin</a>
-        </div>
-    </div>
-    
- </footer>
-    <!-- Splide JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

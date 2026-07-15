@@ -2,9 +2,60 @@
     background: rgba(7, 51, 47, 1);
    
 
+   
+
 }
-.navbar,.bf-info{
-    background: rgba(7, 51, 47, 1);
+.header-index{
+     background-image: url("../doctor house/img/Vector.png");
+       background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-position: left top;
+    background-size: 259px 259px !important;
+    min-height: 239px;
+
+}
+.content-image{
+    position: relative;
+    min-height: 119px;
+}
+
+.content-image::before{
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 460px;
+
+    width: 259px;
+    height: 259px;
+    transform: rotate(20deg);
+    background: url("../doctor house/img/Group 7.png") no-repeat;
+    background-size: 259px 259px;
+
+    z-index: 999;
+    pointer-events: none;
+}
+ .content-image{
+    
+    background-image: url("../doctor house/img/Group\ 6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-position: 605px 580px;
+    background-size: 66px 145px !important;
+  
+  
+ 
+  
+
+} 
+.navbar{
+    background: transparent;
+}
+.navbar.scrolled{
+    background-color: #07332F;
 }
 
 
@@ -14,15 +65,14 @@
 
 }
 .dropdown-menu {
-    width: 300px;
-    background: #ffffff;
+    width: 240px;
+    background: #fff;
     border: none;
-    border-radius: 12px;
+   
     padding: 8px 0;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-
-  
-    transition: all .35s ease;
+    transition: all .10s ease;
+    
 }
 
 
@@ -31,19 +81,19 @@
     color: #07332F;
     font-weight: 600;
     padding: 14px 20px;
-    transition: all .3s ease;
+    transition: all .4s ease;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
     background: rgba(247, 165, 130, 1);
     color: #fff;
-    padding-left: 28px;
+    padding-left: 90px;
 
 }
 
 .dropdown-item:not(:last-child) {
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #fff;
 }
 .content-header{
     height: 800px;
@@ -90,7 +140,7 @@ color: (243, 243, 243, 1);
     position: relative;
     display: inline-block;
     color: #fff !important;
-    font-weight: 500;
+    font-weight: 600;
     transition: color .3s ease;
     background: transparent !important;
     
@@ -118,10 +168,13 @@ color: (243, 243, 243, 1);
 .navbar-nav .nav-link.active{
     color: rgba(247, 165, 130, 1) !important;
     background: transparent !important;
+    border: none !important;
 }
 
 .navbar-nav .nav-link.active::after{
     width: 100%;
+     border: none !important;
+     background-color:  transparent;
 }
 
 /* Remove Bootstrap focus styles */
@@ -247,6 +300,42 @@ color: (243, 243, 243, 1);
     z-index: 2;
 }
 @media (max-width:992px){
+    .navbar{
+    background-color: #07332F;
+}
+    .header{
+    background: rgba(7, 51, 47, 1);
+    background-image: none;
+       background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-position: left top;
+    background-size: 20% 79px;
+    min-height: 75px;
+
+   
+
+    .content-image{
+        background-size: 35px 75px !important;
+        background-position: right 15px bottom 20px;
+    }
+
+    .content-image::before{
+        width: 150px;
+        height: 130px;
+        background-size: 150px 130px;
+
+        top: 80px;
+        left: auto;
+        right: 0px;
+
+        transform: rotate(8deg);
+    }
+}
+.content-image{
+    background-image: none;
+}
     .content h1{
         margin-top: 100px;
         font-family: Source Sans 3;

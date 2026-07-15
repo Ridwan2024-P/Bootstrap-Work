@@ -1,9 +1,72 @@
+.doctor-header{
+    position: relative;
+    background: rgba(7, 51, 47, 1);
+    min-height: 153px;
+    overflow: visible;
+}
+
+.doctor-header::after{
+    content: "";
+    position: absolute;
+    width: 214px;
+    height: 213px;
+    top: 30px;
+    left: -100px;
+    background: url("../doctor house/img/Vector2.png") no-repeat;
+    background-size: 214px 203px;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.doctor-header > *{
+    position: relative;
+    z-index: 1;
+}
+.content-imageg{
+    position: relative;
+    min-height: 119px;
+}
+
+.content-imageg::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 1100px;
+
+    width: 209px;
+    height: 209px;
+    transform: rotate(20deg);
+    background: url("../doctor house/img/Group 7.png") no-repeat;
+    background-size: 209px 209px;
+
+    z-index: 999;
+    pointer-events: none;
+}
+ .content-imageg{
+    
+    background-image: url("../doctor house/img/Group\ 6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-position: 605px 580px;
+    background-size: 66px 145px !important;
+  
+  
+ 
+  
+
+} 
+
 body {
     background-color: #ffff;
     font-family: "Source Sans 3", sans-serif;
 }
 .mb-130{
     margin-top: 130px;
+}
+.mt-147{
+    margin-top: 147px;
 }
 .mb-10{
  margin-bottom: 10px;
@@ -333,7 +396,7 @@ img{
      .content-header img{
         width: 100%;
         height: 240px; 
-        object-fit: cover;
+            object-fit: contain;
     }
     .section-patients-says-body h1, .section-expert-doctor-body h1{
         font-weight: 700;
@@ -346,6 +409,7 @@ img{
 }
     /* Desktop */
 @media (min-width: 992px) {
+    
     .dropdown-menu {
         width: 300px;
         background: #fff;
@@ -366,5 +430,28 @@ img{
         visibility: visible;
         transform: translateY(0);
         background: rgb(244,234,230);
+    }
+}
+
+@media(max-width:992px){
+    .doctor-header::after{
+        content: none;
+    }
+     .content-imageg{
+        background-size: 35px 75px !important;
+        background-position: right 15px bottom 15px;
+        min-height: 100px;
+    }
+
+    .content-imageg::before{
+        width: 120px;
+        height: 100px;
+        background-size: 120px 100px;
+
+        top: 120px;
+        left: auto;
+        right: 50px;
+
+        transform: rotate(0deg);
     }
 }
