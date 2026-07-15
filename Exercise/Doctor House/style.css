@@ -7,6 +7,7 @@
     background: rgba(7, 51, 47, 1);
 }
 
+
 .drop{
     background: transparent;
     border: none;
@@ -20,19 +21,11 @@
     padding: 8px 0;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(15px);
+  
     transition: all .35s ease;
 }
 
-.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    
-}
+
 
 .dropdown-item {
     color: #07332F;
@@ -46,7 +39,7 @@
     background: rgba(247, 165, 130, 1);
     color: #fff;
     padding-left: 28px;
-    margin-top: 50px;
+
 }
 
 .dropdown-item:not(:last-child) {
