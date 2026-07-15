@@ -1,4 +1,10 @@
-
+body {
+    background-color: #ffff;
+    font-family: "Source Sans 3", sans-serif;
+}
+.mb-130{
+    margin-top: 130px;
+}
 .mb-10{
  margin-bottom: 10px;
 }
@@ -7,6 +13,9 @@
 }
 .mb-30{
     margin-bottom: 30px;
+}
+.mb-50{
+    margin-bottom: 50px;
 }
 .header-text{
 
@@ -17,6 +26,13 @@ color: rgba(243, 243, 243, 1);
 
 
 
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+      width: 24px;
+    height: 24px;
 }
 .py-50{
     padding: 50px 0px;
@@ -66,6 +82,21 @@ color: rgba(243, 243, 243, 1);
     object-fit:cover;
     margin:20px auto;
     display:block;
+}
+.fs-16{
+    font-family: Source Sans 3;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0%;
+
+}
+.fs-20{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 100%;
+
 }
 .fs-40{
    
@@ -158,8 +189,12 @@ letter-spacing: 0%;
     line-height: 100%;
     letter-spacing: 0%;
     color: rgba(10, 8, 8, 1);
+   
 
 
+}
+ .mb-130{
+    margin-top: 32px;
 }
 .nav-tabs .nav-link{
     color: #6c757d;
@@ -276,19 +311,16 @@ img{
         color: #fff;
     }
 
-     @media (max-width: 768px) {
-        #serviceTab .nav-item {
-            flex: 0 0 50%; 
-        }
+ @media (max-width: 768px) {
+     #serviceTab .nav-item {
+        flex: 0 0 50%; 
+    }
 
         .p-27 {
             padding: 18px 12px;
             font-size: 16px;
          }
-           .contact-with-us{
-        padding-left: 13px;
-        padding-right: 13px;
-    }
+          
     .mt-32{
          margin-top: 32px;
     }
@@ -303,7 +335,15 @@ img{
         height: 240px; 
         object-fit: cover;
     }
+    .section-patients-says-body h1, .section-expert-doctor-body h1{
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 30px;
+        line-height: 100%;
+        text-align: center;
     }
+
+}
     /* Desktop */
 @media (min-width: 992px) {
     .dropdown-menu {
