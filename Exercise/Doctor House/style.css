@@ -1,5 +1,6 @@
+
 .body{
-     font-family: Source Sans 3;
+     font-family: Source Sans 3; overflow-x: hidden;
 }
 /* Header Hero */
 .header{
