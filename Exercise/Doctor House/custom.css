@@ -32,30 +32,22 @@
     position: absolute;
     top: 40px;
     left: 1100px;
-
     width: 209px;
     height: 209px;
     transform: rotate(20deg);
     background: url("../doctor house/img/Group 7.png") no-repeat;
     background-size: 209px 209px;
-
     z-index: 999;
     pointer-events: none;
 }
  .content-imageg{
-    
     background-image: url("../doctor house/img/Group\ 6.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-     background-position: 605px 580px;
+    background-position: 605px 580px;
     background-size: 66px 145px !important;
-  
-  
- 
-  
-
 } 
 
 body {
@@ -174,29 +166,29 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 .fs-18{
     font-family: Source Sans 3;
-font-weight: 400;
-font-style: Regular;
-font-size: 18px;
-leading-trim: NONE;
-line-height: 26px;
-letter-spacing: 0%;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 26px;
+    letter-spacing: 0%;
 
 }
 .fs-24{
     font-size: 16px;
-    color: #F2871D;
+    color: #F2871D !important;
 }
 .g-15{
     gap: 15px;
 }
 .p35{
     font-family: Source Sans 3;
-font-weight: 400;
-font-style: Regular;
-font-size: 18px;
-leading-trim: NONE;
-line-height: 26px;
-letter-spacing: 0%;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 26px;
+    letter-spacing: 0%;
 
 }
 
@@ -204,7 +196,7 @@ letter-spacing: 0%;
     color: #6c757d;
    
   text-align: center;
-        font-family: Source Sans 3;
+    font-family: Source Sans 3;
     font-weight: 600;
     font-style: SemiBold;
     font-size: 20px;
@@ -233,7 +225,20 @@ letter-spacing: 0%;
     height: 64px;
 
 }
-
+.nav-tabs .nav-link{
+    border: none !important;
+    background: transparent;
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus{
+    border: none !important;
+    box-shadow: none;
+}
+.nav-tabs .nav-link.active{
+    border: none !important;
+    background: transparent;
+    box-shadow: none;
+}
 .px-30{
     padding: 0px 20px 0px 0px;
 }
