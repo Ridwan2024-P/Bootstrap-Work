@@ -1,0 +1,133 @@
+body{
+        background-color: #ffff;
+    }
+    .service-icon{
+    width: 60px;
+    height: 60px;
+    background: rgba(7, 51, 47, 1);
+    transition: all .3s ease;
+    }
+
+    .service-item:hover .service-icon{
+    background-color: rgba(247, 165, 130, 1); 
+    }
+    .service-iconn{
+        color: rgba(7, 51, 47, 1);
+        transition: all .3s ease;
+    }
+      .service-item:hover .service-iconn{
+        color: rgba(247, 165, 130, 1); 
+    }
+.doctor-card{
+    text-align:center;
+}
+
+.doctor-img{
+    position:relative;
+    overflow:hidden;
+}
+
+.doctor-img img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+.doctor-overlay{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    opacity:0;
+    transition:.4s;
+    overflow:hidden;
+    background:transparent;
+}
+
+.doctor-overlay::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-50%;
+    width:50%;
+    height:100%;
+    background: rgba(7, 51, 47, 0.55);
+    transition:.5s ease;
+}
+
+.doctor-overlay::after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:-50%;
+    width:50%;
+    height:100%;
+    background: rgba(7, 51, 47, 0.55);
+    transition:.5s ease;
+}
+
+.social-icons{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+    transform:translateY(25px);
+    transition:.4s;
+}
+
+.social-icons a{
+    width:42px;
+    height:42px;
+    background:#07332F;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#0d4f49;
+}
+
+.doctor-card:hover .doctor-overlay{
+    opacity:1;
+}
+.doctor-card:hover .doctor-overlay::before{
+    left:0;
+}
+.doctor-card:hover .doctor-overlay::after{
+    right:0;
+}
+.doctor-card:hover .social-icons{
+    transform:translateY(0);
+}
+
+.doctor-info{
+    margin-top:25px;
+}
+
+.doctor-info h4{
+    font-size:20px;
+    font-weight:700;
+    color:#07332F;
+    margin-bottom:10px;
+    line-height: 30px;
+}
+
+.doctor-info span{
+    font-size:16px;
+    color:#07332F;
+    font-weight:700;
+    line-height: 24px;
+}
