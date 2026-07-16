@@ -1,20 +1,39 @@
+.body{
+     font-family: Source Sans 3;
+}
+/* Header Hero */
 .header{
     background: rgba(7, 51, 47, 1);
-   
-
-   
-
 }
 .header-index{
-     background-image: url("../doctor house/img/Vector.png");
-       background-repeat: no-repeat;
+    background-image: url("../doctor house/img/Vector.png");
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-     background-position: left top;
+    background-position: left top;
     background-size: 259px 259px !important;
     min-height: 239px;
 
+}
+.content-header{
+    height: 800px;
+}
+.content h1{
+font-family: Source Sans 3;
+font-weight: 600;
+font-size: 75px;
+line-height: 90px;
+letter-spacing: 0%;
+
+}
+.content  p{ 
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+color: (243, 243, 243, 1);
 }
 .content-image{
     position: relative;
@@ -26,18 +45,15 @@
     position: absolute;
     top: 120px;
     left: 460px;
-
     width: 259px;
     height: 259px;
     transform: rotate(20deg);
     background: url("../doctor house/img/Group 7.png") no-repeat;
     background-size: 259px 259px;
-
     z-index: 999;
     pointer-events: none;
 }
  .content-image{
-    
     background-image: url("../doctor house/img/Group\ 6.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -46,18 +62,21 @@
      background-position: 605px 580px;
     background-size: 66px 145px !important;
   
-  
- 
-  
-
 } 
+/* Nav Bar */
 .navbar{
     background: transparent;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none;
 }
 .navbar.scrolled{
     background-color: #07332F;
 }
-
 
 .drop{
     background: transparent;
@@ -65,64 +84,37 @@
 
 }
 .dropdown-menu {
-    width: 240px;
-    background: #fff;
-    border: none;
-   
-    padding: 8px 0;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    transition: all .10s ease;
-    
+    background: #fff !important;
+    border-radius: 0 !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    transition: all .10s ease;  
 }
-
-
-
 .dropdown-item {
-    color: #07332F;
-    font-weight: 600;
+    font-weight: 700;
     padding: 14px 20px;
     transition: all .4s ease;
 }
+.dropdown-menu li{
+    border-bottom:1px solid rgba(230, 230, 230, 1);
+}
 
+.dropdown-menu li:last-child{
+    border-bottom: none;
+}
+.dropdown:hover .dropdown-menu {
+    transform: translateY(10px) !important;   
+}
 .dropdown-item:hover,
 .dropdown-item:focus {
     background: rgba(247, 165, 130, 1);
     color: #fff;
-    padding-left: 90px;
-
+    padding-left: 40px;
 }
-
-.dropdown-item:not(:last-child) {
-    border-bottom: 1px solid #fff;
-}
-.content-header{
-    height: 800px;
-}
-
 .navbar-toggler {
      background:rgba(247,165,130,1);
     border-radius:8px;
     padding:8px 10px;
-}
-.content h1{
-    font-family: Source Sans 3;font-weight: 600;
-font-style: SemiBold;
-font-size: 75px;
-line-height: 90px;
-letter-spacing: 0%;
-
-}
-.content  p{
-  
-font-weight: 600;
-font-style: SemiBold;
-font-size: 18px;
-line-height: 100%;
-letter-spacing: 0%;
-color: (243, 243, 243, 1);
-}
-.body{
-     font-family: Source Sans 3;
 }
 .nav-item a,.drop{
     font-size: 18px;  
@@ -145,7 +137,6 @@ color: (243, 243, 243, 1);
     background: transparent !important;
     
 }
-
 /* Underline */
 .navbar-nav .nav-link::after{
     content: "";
@@ -153,17 +144,13 @@ color: (243, 243, 243, 1);
     left: 0;
     bottom: -4px;
     width: 0;
-    height: 3px;
+    height: 2px;
     background: rgba(247, 165, 130, 1);
     transition: width .35s ease;
 }
-
-
-
 .navbar-nav .nav-link:hover::after{
     width: 100%;
 }
-
 /* Active Link */
 .navbar-nav .nav-link.active{
     color: rgba(247, 165, 130, 1) !important;
@@ -333,23 +320,19 @@ color: (243, 243, 243, 1);
         transform: rotate(8deg);
     }
 }
-.content-image{
-    background-image: none;
-}
+    .content-image{
+        background-image: none;
+    }
     .content h1{
         margin-top: 100px;
-        font-family: Source Sans 3;
+        line-height: 1.6;
         font-weight: 600;
-        font-style: SemiBold;
         font-size: 30px;
-        leading-trim: NONE;
-        line-height: 100%;
         letter-spacing: 0%;
         text-align: center;
 
     }
-    .content p{
-        
+    .content p{      
     font-weight: 400;
     font-size: 14px;
     line-height: 1.6;
@@ -357,8 +340,6 @@ color: (243, 243, 243, 1);
     text-align: center;
 
 }
-
-
     .content-header{
     height: 375px;
 }

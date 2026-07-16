@@ -1,7 +1,7 @@
 .doctor-header{
     position: relative;
     background: rgba(7, 51, 47, 1);
-    min-height: 153px;
+    min-height: 200px;
     overflow: visible;
 }
 
@@ -183,7 +183,7 @@ letter-spacing: 0%;
 
 }
 .fs-24{
-    font-size: 24px;
+    font-size: 16px;
     color: #F2871D;
 }
 .g-15{
