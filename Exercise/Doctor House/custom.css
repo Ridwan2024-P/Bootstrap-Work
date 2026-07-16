@@ -439,6 +439,9 @@ img{
 }
 
 @media(max-width:992px){
+    .p-18{
+    padding: 18px 30px;
+}
     .doctor-header::after{
         content: none;
     }
