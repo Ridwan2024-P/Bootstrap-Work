@@ -169,6 +169,14 @@ color: (243, 243, 243, 1);
     color: rgba(247, 165, 130, 1) !important;
     box-shadow: none;
 }
+.btn-services{
+    color: rgba(247, 165, 130, 1);
+    border:2px solid rgba(247, 165, 130, 1); 
+}
+.btn-services:hover{
+    background-color:rgba(247, 165, 130, 1); 
+    color: #ffff;
+}
 .card-info-body p{
 
     font-weight: 400;
@@ -199,8 +207,8 @@ color: (243, 243, 243, 1);
     color: #ffffff !important;
    
 }
-.splide__arrow {
-   
+/* Splide */
+.splide__arrow { 
     opacity: 1;
     width: 50px;
     height: 50px;
@@ -209,7 +217,7 @@ color: (243, 243, 243, 1);
     fill:  rgba(247, 165, 130, 1); 
 }
 .splide__arrow--next svg {
-    fill:  #ffff; 
+    fill:  rgba(247, 165, 130, 1); 
 }
 .splide__arrow--prev {
     left: -18px;
@@ -219,7 +227,37 @@ color: (243, 243, 243, 1);
 
 .splide__arrow--next {
     right: -18px;
-     background: rgba(247, 165, 130, 1);
+     background-color: white;
+    border: 1px solid rgba(247, 165, 130, 1);
+}
+.splide__arrow--next:hover,
+.splide__arrow--prev:hover {
+     background-color:  rgba(247, 165, 130, 1); 
+}
+.splide__arrow--next:hover svg,
+.splide__arrow--prev:hover svg {
+    fill: #fff;
+}
+
+/* Our Expert Doctors */
+.doctor-view-btn{
+    color: rgba(247, 165, 130, 1); 
+    border: 2px solid rgba(247, 165, 130, 1); 
+    font-size:20px;
+}
+.doctor-view-btn:hover{
+    background-color: rgba(247, 165, 130, 1); 
+    color: #ffff;
+}
+
+/* Footer */
+.footer-btn{
+     border:2px solid  rgba(247, 165, 130, 1); 
+     color: rgba(247, 165, 130, 1);
+}
+.footer-btn:hover{
+    background-color:rgba(247, 165, 130, 1);
+    color: #ffff;
 }
 
 
