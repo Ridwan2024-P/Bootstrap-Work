@@ -1,6 +1,4 @@
-*{
-    outline: 1px solid red;
-}
+
 .body{
      font-family: Source Sans 3; overflow-x: hidden;
 }
@@ -73,6 +71,7 @@ color: (243, 243, 243, 1);
 /* Nav Bar */
 .navbar{
     background: transparent;
+   
 }
 .navbar-toggler,
 .navbar-toggler:focus,
