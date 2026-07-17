@@ -9,7 +9,7 @@ img{
     height: auto;
 }
 /* Header Hero */
-.header{
+.header,.bf-info{
     background: rgba(7, 51, 47, 1);
 }
 .header-index{
