@@ -80,8 +80,8 @@
 
 <!-- Calender -->
  <section class="calender mb-130">
-    <div class="container ">
-        <div class="row">
+    <div class="container calender-image ">
+        <div class="row g-4">
             <div class="col-md-6">
                      <div class="d-flex justify-content-center ">
                         <div
@@ -89,9 +89,10 @@
                             data-coreui-locale="en-US"
                             data-coreui-start-date="2026/07/4"
                             data-coreui-toggle="calendar"
-                            id="myCalendar"></div>
-                          </div> 
+                            id="myCalendar">
                         </div>
+                    </div> 
+                </div>
             
             <div class="col-md-6">
                 <img src="img/88f975cc971efd4170391f6ca1a2473f488b130f.jpg" alt="" class="img-fluid rounded-4 w-100 h-100 object-fit-cover">
@@ -109,11 +110,10 @@
 
                 <button
                     type="button"
-                    class="btn-close  text-white rounded-pill p-2" style="background-color:rgba(7, 51, 47, 1); color:white;"
+                    class="btn-close  text-white rounded-pill p-2" style="background-color:rgba(7, 51, 47, 1)!important; color:white;"
                     data-bs-dismiss="modal">
                 </button>
             </div>
-
             <div class="modal-body">
 
                 <form>
@@ -121,7 +121,7 @@
                     <div class="row g-3">
 
                         <div class="col-12">
-                            <input type="text" class="form-control form-control-sm select" readonly value="April 30,2020">
+                            <input type="text"   id="selectedDate"  class="form-control form-control-sm select" readonly >
                         </div>
                         <div class="col-12">
                             <input type="text" class="form-control form-control-sm" value="10:05am - 11:30am" readonly>
@@ -153,74 +153,56 @@
         </div>
     </div>
 </div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-
-    setTimeout(function () {
-        const calendar = document.getElementById("myCalendar");
-        calendar.addEventListener("click", function (e) {
-            if (
-                e.target.closest(".calendar-cell") ||
-                e.target.closest(".calendar-day")
-            ) {
-                const modal = new bootstrap.Modal(
-                    document.getElementById("appointmentModal")
-                );
-
-                modal.show();
-            }
-
-        });
-
-    }, 500);
-
-});
-</script>
 
 <!-- Service -->
- <div class="container mb-130">
-      <h5 class="text-center fs-1 fw-bolder">Available slots for Teeth Orthodontics.</h5>
+ <div class="container mb-130 ">
+    <p class="fs-5  text-center" style="color: rgba(247, 165, 130, 1);">
+        Available Services on April 30, 2022
+    </p>
+
+    <h5 class="fs-1 fw-bolder  text-center">Please select a service.</h5>
+      
     <div class="row mt-5 mb-5 g-4">
         <div class="col-lg-4 col-md-6">
             <div class="rounded-3 shadow-sm p-4 d-flex align-items-center h-100">
-                <div style="background: rgba(255, 65, 85, 0.1); width:100px;" class="p-4 align-items-center me-4">
+                <div style="background: rgba(255, 65, 85, 0.1); width:100px;" class="p-4 align-items-center me-4 rounded-4">
                      <img src="img/Group 34964.png" class="img-fluid " alt=""></div>
                 <h4 class="mb-0">Teeth <br> Orthodontics</h4>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
-            <div class="rounded-3 shadow p-4 d-flex align-items-center h-100">
-                <div style="background: rgba(255, 65, 85, 0.1); width:100px;" class="p-4 align-items-center me-4">
-                     <img src="img/Group 34964.png" class="img-fluid " alt=""></div>
-                <h4 class="mb-0">Teeth <br> Orthodontics</h4>
+            <div class="rounded-3 shadow-sm p-4 d-flex align-items-center h-100">
+                <div style="background: rgba(255, 219, 189, 0.3); width:100px;" class="p-4 align-items-center me-4 rounded-4">
+                     <img src="img/Flat.png" class="img-fluid " alt=""></div>
+                <h4 class="mb-0">Cosmetic <br> Dentisty</h4>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
-            <div class="rounded-3 shadow p-4 d-flex align-items-center h-100">
-                <div style="background: rgba(255, 65, 85, 0.1); width:100px;" class="p-4 align-items-center me-4">
-                     <img src="img/Group 34964.png" class="img-fluid " alt=""></div>
-                <h4 class="mb-0">Teeth <br> Orthodontics</h4>
+            <div class="rounded-3 shadow-sm p-4 d-flex align-items-center h-100">
+                <div style="background: rgba(255, 65, 85, 0.1); width:100px;" class="p-4 align-items-center me-4 rounded-4">
+                     <img src="img/Group.png" class="img-fluid " alt=""></div>
+                <h4 class="mb-0">Teeth <br> Cleaning</h4>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
-            <div class="rounded-3 shadow p-4 d-flex align-items-center h-100">
-                <div style="background: rgba(255, 65, 85, 0.1); width:100px;" class="p-4 align-items-center me-4">
-                     <img src="img/Group 34964.png" class="img-fluid " alt=""></div>
-                <h4 class="mb-0">Teeth <br> Orthodontics</h4>
+            <div class="rounded-3 shadow-sm p-4 d-flex align-items-center h-100">
+                <div style="background: rgba(55, 212, 233, 0.1);; width:100px;" class="p-4 align-items-center me-4 rounded-4">
+                     <img src="img/Group (1).png" class="img-fluid " alt=""></div>
+                <h4 class="mb-0">Cavity <br>Protection</h4>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
-            <div class="rounded-3 shadow p-4 d-flex align-items-center h-100">
-                <div style="background: rgba(255, 65, 85, 0.1); width:100px;" class="p-4 align-items-center me-4">
-                     <img src="img/Group 34964.png" class="img-fluid " alt=""></div>
-                <h4 class="mb-0">Teeth <br> Orthodontics</h4>
+            <div class="rounded-3 shadow-sm p-4 d-flex align-items-center h-100">
+                <div style="background: rgba(255, 65, 85, 0.1); width:100px;" class="p-4 align-items-center me-4 rounded-4">
+                     <img src="img/Group 34967.png" class="img-fluid " alt=""></div>
+                <h4 class="mb-0">Pediatric <br> Dental</h4>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
-            <div class="rounded-3 shadow p-4 d-flex align-items-center h-100">
-                <div style="background: rgba(255, 65, 85, 0.1); width:100px;" class="p-4 align-items-center me-4">
-                     <img src="img/Group 34964.png" class="img-fluid " alt=""></div>
-                <h4 class="mb-0">Teeth <br> Orthodontics</h4>
+            <div class="rounded-3 shadow-sm p-4 d-flex align-items-center h-100">
+                <div style="background: rgba(255, 193, 7, 0.1); width:100px;" class="p-4 align-items-center me-4 rounded-4">
+                     <img src="img/Group 34963.png" class="img-fluid " alt=""></div>
+                <h4 class="mb-0">Oral <br> Surgery</h4>
             </div>
         </div>
 
@@ -230,16 +212,12 @@
 
 
 <!-- Available -->
-<div class="container text-center mt-5 mb-5">
-    <p class="fs-5" style="color: rgba(247, 165, 130, 1);">
-        Available Services on April 30, 2022
-    </p>
-
-    <h5 class="fs-1 fw-bolder">Please select a service.</h5>
+<div class="container text-center mb-130">
+    <h5 class="text-center fs-1 fw-bolder">Available slots for Teeth Orthodontics.</h5>
 
     <div class="row g-4 mt-5">
         <div class="col-md-4">
-            <div class="cards shadow rounded-4 p-5">
+            <div class="cards shadow-sm rounded-4 p-5">
                 <img src="img/Group 34964.png" class="img-fluid mb-3 p-4 rounded-pill"style="background-color: rgba(255, 65, 85, 0.1);" alt="">
                 <h5 class="fw-bold">Teeth Orthodontics</h5>
                 <p class="text-secondary">8:00 AM - 9:00 AM</p>
@@ -247,7 +225,15 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="cards shadow rounded-4 p-5">
+            <div class="cards shadow-sm rounded-4 p-5">
+                <img src="img/004-dental.png" class="img-fluid mb-3 p-4 rounded-pill"style="background: rgba(1, 208, 251, 0.05);" alt="">
+                <h5 class="fw-bold">Teeth Orthodontics</h5>
+                <p class="text-secondary">8:00 AM - 9:00 AM</p>
+                <a href="#" class="btn text-white fw-bold rounded-3"style="background-color: rgba(247, 165, 130, 1);">BOOK APPOINTMENT</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="cards shadow-sm rounded-4 p-5">
                 <img src="img/Group 34964.png" class="img-fluid mb-3 p-4 rounded-pill"style="background-color: rgba(255, 65, 85, 0.1);" alt="">
                 <h5 class="fw-bold">Teeth Orthodontics</h5>
                 <p class="text-secondary">8:00 AM - 9:00 AM</p>
@@ -255,7 +241,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="cards shadow rounded-4 p-5">
+            <div class="cards shadow-sm rounded-4 p-5">
                 <img src="img/Group 34964.png" class="img-fluid mb-3 p-4 rounded-pill"style="background-color: rgba(255, 65, 85, 0.1);" alt="">
                 <h5 class="fw-bold">Teeth Orthodontics</h5>
                 <p class="text-secondary">8:00 AM - 9:00 AM</p>
@@ -263,7 +249,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="cards shadow rounded-4 p-5">
+            <div class="cards shadow-sm rounded-4 p-5">
                 <img src="img/Group 34964.png" class="img-fluid mb-3 p-4 rounded-pill"style="background-color: rgba(255, 65, 85, 0.1);" alt="">
                 <h5 class="fw-bold">Teeth Orthodontics</h5>
                 <p class="text-secondary">8:00 AM - 9:00 AM</p>
@@ -271,15 +257,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="cards shadow rounded-4 p-5">
-                <img src="img/Group 34964.png" class="img-fluid mb-3 p-4 rounded-pill"style="background-color: rgba(255, 65, 85, 0.1);" alt="">
-                <h5 class="fw-bold">Teeth Orthodontics</h5>
-                <p class="text-secondary">8:00 AM - 9:00 AM</p>
-                <a href="#" class="btn text-white fw-bold rounded-3"style="background-color: rgba(247, 165, 130, 1);">BOOK APPOINTMENT</a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="cards shadow rounded-4 p-5">
+            <div class="cards shadow-sm rounded-4 p-5">
                 <img src="img/Group 34964.png" class="img-fluid mb-3 p-4 rounded-pill"style="background-color: rgba(255, 65, 85, 0.1);" alt="">
                 <h5 class="fw-bold">Teeth Orthodontics</h5>
                 <p class="text-secondary">8:00 AM - 9:00 AM</p>
@@ -307,7 +285,7 @@
 
  
  
- <footer class="footer bg-light text-dark">
+ <footer class="footer bg-light text-dark mb-130">
     <div class="container pt-5">
         <div class="row mt-0 justify-content-center align-items-center mt-md-2 ">
            

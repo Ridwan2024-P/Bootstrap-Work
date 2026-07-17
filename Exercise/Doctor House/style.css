@@ -288,7 +288,12 @@ color: (243, 243, 243, 1);
     display: block;
    
 }
-
+/* Appointment Page */
+.calender-image{
+    background: url("../doctor house/img/landing-bg.png") no-repeat center;
+    background-size: cover;
+    
+}
 /* file */
    .upload-box{
             border:2px dashed #d9d9d9;
