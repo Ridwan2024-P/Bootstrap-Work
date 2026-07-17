@@ -45,6 +45,7 @@ color: (243, 243, 243, 1);
 .content-image{
     position: relative;
     min-height: 119px;
+    
 }
 
 .content-image::before{
@@ -435,4 +436,13 @@ color: (243, 243, 243, 1);
 }
 
     
+}
+@media (max-width: 768px){
+    .content-image::before{
+        display: none;
+    }
+
+    .content-image{
+        background-image: none;
+    }
 }
