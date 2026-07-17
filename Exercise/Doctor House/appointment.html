@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.26.0/dist/css/coreui.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="custom.css">
@@ -79,23 +78,36 @@
           
 </header>
 
-
-
 <!-- Calender -->
  <section class="calender mb-130">
     <div class="container calender-image ">
         <div class="row g-4">
-            <div class="col-md-6">
-                     <div class="d-flex justify-content-center ">
-                        <div
-                            class="border rounded shadow"
-                            data-coreui-locale="en-US"
-                            data-coreui-start-date="2026/07/4"
-                            data-coreui-toggle="calendar"
-                            id="myCalendar">
+            <div class="col-md-6">                 
+                <div class="calendar-section container d-flex justify-content-center">
+                    <div class="calendar-wrapper">
+                        <div class="calendar-header">
+                            <div class="calendar-btn left">&#10094;</div>
+                            <div class="header-display">
+                                <p class="display"></p>
+                            </div>
+                            <div class="calendar-btn right">&#10095;</div>
                         </div>
-                    </div> 
+                        <div class="week">
+                            <div>Su</div>
+                            <div>Mo</div>
+                            <div>Tu</div>
+                            <div>We</div>
+                            <div>Th</div>
+                            <div>Fr</div>
+                            <div>Sa</div>
+                        </div>
+                        <div class="days"></div>
+                        <div class="display-selected"  id="myCalendar">
+                            <p class="selected"></p>
+                        </div>
+                    </div>
                 </div>
+         </div>
             
             <div class="col-md-6">
                 <img src="img/88f975cc971efd4170391f6ca1a2473f488b130f.jpg" alt="" class="img-fluid rounded-4 w-100 h-100 object-fit-cover">

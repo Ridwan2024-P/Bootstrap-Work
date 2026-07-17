@@ -8,41 +8,107 @@ window.addEventListener("scroll", function () {
     }
 });
 
+const display = document.querySelector(".display");
+const days = document.querySelector(".days");
+const previous = document.querySelector(".left");
+const next = document.querySelector(".right");
+const selected = document.querySelector(".selected");
 
-// Appointment
- document.addEventListener("DOMContentLoaded", function () {
+let today = new Date();
+let month = today.getMonth();
+let year = today.getFullYear();
 
-    setTimeout(() => {
+function renderCalendar() {
 
-        const calendar = document.getElementById("myCalendar");
+    days.innerHTML = "";
 
-        calendar.addEventListener("click", function (e) {
+    const firstDay = new Date(year, month, 1);
+    const lastDay = new Date(year, month + 1, 0);
 
-            const day = e.target.closest(".calendar-cell,.calendar-day");
+    display.textContent = new Date(year, month).toLocaleString("en-US", {
+        month: "long",
+        year: "numeric"
+    });
 
-            if (!day) return;
+    // Empty cells before the first day
+    for (let i = 0; i < firstDay.getDay(); i++) {
+        const empty = document.createElement("div");
+        days.appendChild(empty);
+    }
 
-            console.log(day); 
+    // Days
+    for (let i = 1; i <= lastDay.getDate(); i++) {
 
-        
-            let date =
-                day.dataset.date ||
-                day.getAttribute("data-date") ||
-                day.getAttribute("aria-label");
+        const cell = document.createElement("div");
+        const current = new Date(year, month, i);
 
-            if (!date) {
-                const dayNumber = day.innerText.trim();
-                date = `July ${dayNumber}, 2026`;
-            }
+        cell.innerHTML = i;
+        cell.dataset.date = current.toDateString();
 
-            document.getElementById("selectedDate").value = date;
+        // Highlight today's date
+        if (
+            current.getDate() === new Date().getDate() &&
+            current.getMonth() === new Date().getMonth() &&
+            current.getFullYear() === new Date().getFullYear()
+        ) {
+            cell.classList.add("current-date");
+        }
 
-            new bootstrap.Modal(
+        // Click Event
+        cell.addEventListener("click", function () {
+
+            // Remove previous selection
+            document.querySelectorAll(".days div").forEach(item => {
+                item.classList.remove("selected-date");
+            });
+
+            // Highlight selected day
+            this.classList.add("selected-date");
+
+            // Show selected date under calendar
+            selected.innerHTML = "Selected Date: " + this.dataset.date;
+
+            // Set selected date in modal input
+            document.getElementById("selectedDate").value = this.dataset.date;
+
+            // Open Bootstrap Modal
+            const modal = new bootstrap.Modal(
                 document.getElementById("appointmentModal")
-            ).show();
+            );
+
+            modal.show();
 
         });
 
-    }, 500);
+        days.appendChild(cell);
+    }
+}
 
+// Previous Month
+previous.addEventListener("click", function () {
+
+    month--;
+
+    if (month < 0) {
+        month = 11;
+        year--;
+    }
+
+    renderCalendar();
 });
+
+// Next Month
+next.addEventListener("click", function () {
+
+    month++;
+
+    if (month > 11) {
+        month = 0;
+        year++;
+    }
+
+    renderCalendar();
+});
+
+// Initial Load
+renderCalendar();
