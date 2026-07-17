@@ -160,7 +160,7 @@ color: (243, 243, 243, 1);
     width: 100%;
 }
 /* Active Link */
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link.active,.drop.active{
     color: rgba(247, 165, 130, 1) !important;
     background: transparent !important;
     border: none !important;
