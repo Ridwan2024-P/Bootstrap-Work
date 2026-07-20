@@ -1,6 +1,4 @@
-* {
-  
-}
+
 .body{
      font-family: Source Sans 3; overflow-x: hidden;
 }
@@ -8,7 +6,7 @@ img{
     max-width: 100%;
     height: auto;
 }
-.btn:focus,.btn-close {
+.btn:focus {
     box-shadow: none !important;
 }
 

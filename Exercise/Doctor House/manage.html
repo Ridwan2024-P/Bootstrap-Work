@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="custom.css">
-      <link rel="stylesheet" href="about.css">
-    <title>Home Page</title>
+      <link rel="stylesheet" href="dashboard.css">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+       <title>Manage DoctorPage</title>
+
 </head>
 
-<style>
-    .navbar{
-    background: rgba(7, 51, 47, 1);
-   
-}
-</style>
 <body>
-     <!-- Navbar -->
-     <nav class=" navbar mb-5  navbar-expand-lg fixed-top custom-nav  small mb-5 custom-nav" style="--bs-bg-opacity:0.9;">
-        <div class="container  ">
+    
+
+     <nav class=" navbar  navbar-expand-lg fixed-top custom-nav  small mb-5 custom-nav" style="--bs-bg-opacity:0.9;" id="navbar" style=" background: rgba(7, 51, 47, 1);">
+        <div class=" ">
+            <button class="btn btn-link text-white d-md-none me-2 p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileAdminSidebar" aria-controls="mobileAdminSidebar">
+                <i class="fa-solid fa-bars-staggered fs-4"></i>
+            </button>
             <a href="index.html" class="navbar-brand brand-style text-white">
                 <span class="fw-bold">Doc</span>
-                <span class="fw-bold">House</span>
+                <span class="fw-bold">House</span> 
             </a>
-            <button class="navbar-toggler border-0 " type="submit" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content"
+            </div>
+            <button class="navbar-toggler  border-0 " type="submit" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content"
             aria-controls="#navbar-supported-content" aria-expanded="false" aria-label="Toggle Navigation">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list text-light " viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -39,99 +39,94 @@
             <div class="collapse navbar-collapse " id="navbar-supported-content">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                      <li class="nav-item "><a href="index.html" class="nav-link text-white me-3" aria-current="page" >Home</a></li>
-                    <li class="nav-item "><a href="doctor-profile.html" class="nav-link text-white me-3 " >About</a></li>
-                    <li class="nav-item "><a href="appointment.html" class="nav-link text-white me-3 " >Appointment</a></li>
-                     <li class="nav-item "><a href="#" class="nav-link text-white me-3 " >Reviews</a></li>
-                      <li class="nav-item "><a href="contact.html" class="nav-link text-white me-3 " >Contact Us</a></li>
-                    <li class="nav-item "><a href="login.html" class="nav-link text-white me-3 active" >Login</a></li>
-                   
-                    
+                     <li class="nav-item "><a href="about.html" class="nav-link text-white me-3 " >About</a></li>
+                     <li class="nav-item "><a href="" class="nav-link text-white me-3 " >Appointment</a></li>
+                     <li class="nav-item "><a href="" class="nav-link text-white me-3 " >Reviews</a></li>
+                     <li class="nav-item "><a href="contact.html" class="nav-link text-white me-3 " >Contact Us</a></li>
+                     <li class="nav-item "><a href="login.html" class="nav-link text-white me-3 active" >Login</a></li>
                 </ul>  
             </div>
-        </div>
      </nav> 
 
-     <div class="side-buttton mt-5">
-        <div class="container-fluid " style="position:fixed;">
-            <div class="row">
-                <div class="col-md-3 p-0 d-none d-md-block ">
+            <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="mobileAdminSidebar" aria-labelledby="mobileAdminSidebarLabel" style="width: 280px;">
+      <div class="offcanvas-header border-bottom" style="background: rgba(7, 51, 47, 1);">
+        <h5 class="offcanvas-title text-white fw-bold" id="mobileAdminSidebarLabel">DocHouse Admin</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body p-0 mobile-drawer-body">
+        <a href="admin-dashboard.html" class="sidebar-link  content ">All Users</a>
+        <a href="add-doctor.html" class="sidebar-link fs-21 content">Add a Doctor</a>
+        <a href="manage.html" class="sidebar-link fs-21 content active">Manage Doctor</a>
+        <a href="index.html" class="sidebar-link fs-21 content">Home</a>
+      </div>
+    </div>
+    <div class="container-fluid range">
+    <div class="row g-0">
 
-                <div class="  px-5">
-                    <a href="admin-dashboard.html" class="btn  fs-21 rounded-0">
-                        All Users
-                    </a>
-                </div>
+        <div class="col-md-3 p-0  d-none d-md-block">
+            <a href="admin-dashboard.html" class="sidebar-link  content fs-21">All Users</a>
+            <a href="add-doctor.html" class="sidebar-link fs-21 content">Add a Doctor</a>
+            <a href="manage.html" class="sidebar-link fs-21 content active">Manage Doctor</a>
+            <a href="index.html" class="sidebar-link fs-21 content">Home</a>
+        </div>
 
-                <div class="px-5">
-                    <a href="add-doctor.html" class="btn  fs-21 rounded-0">
-                        Add a Doctor
-                    </a>
-                </div>
+        <div class="col-md-9 p-3 table-s">
+           
+                        <a href="" class="btn  fs-25 mb-30 mt-19 ">Manage Doctor: 02</a>
+             
+                <div class="card  mb-3  ">
+                <div class="table-responsive ">
+                    <table class="table  mb-0 ">
+                        <thead>
+                            <tr class="table-secondary" >
+                                <th style="width:32px;" class="py-3"></th>
+                                <th class="py-3 fs-14" style="color:#383838;">Avatar</th>
+                                <th class="py-3 fs-14" style="color:#383838;">Name</th>
+                                <th class="py-3 fs-14" style="color:#383838;">Specialty</th>
+                                 <th class="py-3 fs-14" style="color:#383838;">Action</th>
+                            </tr>
+                        </thead>
 
-                <div class="px-5 bg-light">
-                    <a href="manage.html" class="btn  fs-21 rounded-0">
-                        Manage Doctor
-                    </a>
-                </div>
+                        <tbody>
+                            <tr>
+                                <th class=" fs-18c text-secondary p-4"> 01</th>
+                                <th  class=" fs-18c text-secondary py-3"><img src="img/08e455fe112b5aa889f8276e41832a747a9bda45.png" alt="" class="rounded-circle object-fit-cover me-4" style=" max-width:40px;" ></th>
+                                <td class="fs-18c text-secondary py-4">
+                                Ahsan, Md Ridwan Bin
+                                </td>
 
-                <div class="px-5">
-                    <a href="index.html" class="btn t fs-21 rounded-0">
-                        Home
-                    </a>
-                </div>
+                               <td class="fs-18c text-secondary py-4">
+                               Teeth Cleaning
+                                </td>
 
-            </div>
-                 <div class="col-md-9 col-12 p=5 px-0 px-md-5 bg-light vh-100">
-                     <div class="dropdown d-md-none bf-info ">
-    <a class="btn drop text-white fw-bold boder-0  mt-2 fs-5 dropdown-toggle mb-10"
-       href="#"
-       role="button"
-       id="dropdownMenuLink"
-       data-bs-toggle="dropdown"
-       aria-expanded="false">
-        Menu
-    </a>
+                                <th class="text-secondary py-3"><div > <a href="#" class="btn btn-danger fs-16c text-white btn-sm" data-bs-toggle="modal" data-bs-target="#pay" >Delete</a></th></div>     
+                            </tr>
 
-    <ul class="dropdown-menu bg-color" aria-labelledby="dropdownMenuLink ">
-        <li><a href="admin-dashboard.html" class="dropdown-item fs-6 fw-bold" href="#">All Users</a></li>
-        <li><a href="add-doctor.html" class="dropdown-item fs-6 fw-bold  " href="#">Add a Doctor</a></li>
-        <li><a href="manage.html" class="dropdown-item fs-6 fw-bold " href="#">Manage Doctor</a></li>
-                <li><a href="index.html" class="dropdown-item fs-6 fw-bold  " href="#">Home</a></li>
-    </ul>
-</div>
-                     <div class=" d-flex ">
-                        <a href="" class="btn  fs-25 mb-30 mt-19 ">Manage Doctor : 02</a>
-                    </div>
-                    <div class="col-md-12 col-12 px-2">
-                       <div class="card table-responsive   border-0 mb-3 ">
-                    <table class="table  rounded-4 align-middle mb-0 text-center rounded-4" >
-                        <tr class="table-secondary fw-normal small  p-5">
-                            <th class="py-2 fs-14">Avatar</th>
-                            <th class="py-2 fs-14">NAME</th>
-                            <th class="py-2 fs-14">SPECIALITY</th>
-                            <th class="py-2 fs-14">ACTION</th>            
-                        </tr>
-                        <tr class="border-bottom">
-                            <th class="text-secondary  fs-18c"> <span class="me-3 pt-2 text-secondary">01</span> <img src="img/08e455fe112b5aa889f8276e41832a747a9bda45.png" alt="" class="rounded-circle object-fit-cover me-4" style=" max-width:40px;" ></th>
-                            <th class="text-secondary fs-18c py-4"> Ahsan, Md Ridwan Bin</th>
-                             <th class="text-secondary fs-18c"> Teeth Cleaning</th> 
-                            <th class="text-secondary"><div > <a href="#" class="btn fs-16c btn-danger text-white btn-sm" data-bs-toggle="modal" data-bs-target="#pay" >Delete</a></th></div>     
-                        </tr>
-                        <tr class="">
-                            <th class="text-secondary fs-18c py-4"> <span class="me-3 pt-2 text-secondary">02</span> <img src="img/08e455fe112b5aa889f8276e41832a747a9bda45.png" alt="" class="rounded-circle object-fit-cover me-4" style=" max-width:40px;" ></th>
-                            <th class="text-secondary fs-18c"> Rahman, Md Rafid Bin</th>
-                             <th class="text-secondary fs-18c"> Teeth Cleaning</th> 
-                            <th class="text-secondary"><div > <a href="#" class="btn btn-danger fs-16c text-white btn-sm" data-bs-toggle="modal" data-bs-target="#pay" >Delete</a></th></div>     
-                        </tr>
-                       
+                            <tr>
+                                <th class=" fs-18c text-secondary p-4"> 02</th>
+                                <th class=" fs-18c text-secondary py-3"><img src="img/08e455fe112b5aa889f8276e41832a747a9bda45.png" alt="" class="rounded-circle object-fit-cover me-4" style=" max-width:40px;" ></th>
+                                <td class="fs-18c text-secondary py-4">
+                                Rahman, Md Rafid Bin
+                                </td>
+                                
 
+                                <td class="fs-18c text-secondary py-4">
+                               Teeth Cleaning
+                                </td>
+
+                                <th class="text-secondary py-3"><div > <a href="#" class="btn btn-danger fs-16c text-white btn-sm" data-bs-toggle="modal" data-bs-target="#pay" >Delete</a></th></div>     
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
-                     </div>
-                 </div>
             </div>
         </div>
-     </div>
+
+    </div>
+</div>
+
+
+
 
 
     <!-- Confirm Modal -->
@@ -195,8 +190,7 @@
 
 
 
-
-
+      <script src="script.js"></script>
      <script src="https://unpkg.com/@coreui/coreui-pro@5.5.0/dist/js/coreui.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
