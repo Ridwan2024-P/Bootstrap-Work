@@ -8,6 +8,13 @@ img{
     max-width: 100%;
     height: auto;
 }
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.btn:focus-visible {
+    outline: none;
+}
 /* Header Hero */
 .header,.bf-info{
     background: rgba(7, 51, 47, 1);
