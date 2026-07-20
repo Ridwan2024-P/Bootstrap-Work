@@ -163,7 +163,8 @@ color: rgba(56, 56, 56, 1);
 
 
 .table-responsive::-webkit-scrollbar{
-    height: 8px  !important;
+    height: 3px  !important;
+    margin-right: 250px;
 }
 
 .table-responsive::-webkit-scrollbar-track{
