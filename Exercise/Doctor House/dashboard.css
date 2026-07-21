@@ -46,7 +46,7 @@
     padding: 18px 23px 16px 21px;
     }
     .content{
-        padding:20px;
+        padding:0px 0px 0px 16px !important;
     }
     .table-s{
         padding: 16px !important;
